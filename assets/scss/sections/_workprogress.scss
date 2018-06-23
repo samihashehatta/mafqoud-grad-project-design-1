@@ -1,0 +1,119 @@
+//work progress section
+/*==========| (13). work progress section css |==========*/
+.lt_work_progress_section{
+
+	//video block
+	.lt_workprogress_video{
+		position:relative;
+		iframe{
+			height:340px;
+		}
+		.lt_video_overlay{
+			width:100%;
+			height:100%;
+			left:0;
+			top:0;
+			position:absolute;
+			display:-webkit-flex;
+			display:flex;
+			opacity:1;
+			-webkit-transition:0.3s;
+					transition:0.3s;
+			.lt_video_overlay_inner{
+				padding:20px;
+				margin:auto;
+				text-align:center;
+				i{
+					font-size:$font-full;
+					color:$primary-dark;
+					width: 75px;
+				    height: 75px;
+				    background: $white;
+				    border-radius: 50%;
+				    line-height: 75px;
+				    text-align: center;
+				    padding-left: 8px;
+				}
+				h3{
+					font-size:$medium-font;
+					color:$white;
+					font-weight:$medium-weight;
+					text-transform:uppercase;
+				}
+			}
+		}
+		&:hover{
+			.lt_video_overlay{
+				opacity:1;
+			}
+		}
+	}
+	 //progress bars
+	 .lt_workprogress_bars_container{
+	 	.lt_workpregress_row{
+	 		margin-bottom:$mob-margin;
+	 		h5{
+	 			font-size:$base-font;
+	 			margin-top:0;
+	 			margin-bottom:15px;
+	 			color:$text-dark;
+	 			font-weight:$dark-weight;
+	 			text-transform:uppercase;
+	 			position:relative;
+	 			span{
+	 				right:0;
+	 				top:0;
+	 				padding-right:14px;
+	 				position:absolute;
+	 				&:after{
+	 					content:'%';
+	 					right:0;
+	 					top:0;
+	 					margin-top:-1px;
+	 					position:absolute;
+	 				}
+	 			}
+	 		}
+	 		.lt_workprogress_loader{
+	 			height:5px;
+	 			position:relative;
+	 			background:$border-color;
+	 			.lt_wp_loader_inner{
+	 				height:100%;
+	 				position:absolute;
+	 				background:$primary-dark;
+	 			}
+	 		}
+	 		&:last-child{
+	 			margin-bottom:0;
+	 		}
+	 	}
+	 }
+}
+
+
+
+
+
+
+/*==========| responsive work progress section css |==========*/
+
+@media (max-width: 767px) {
+	.lt_work_progress_section{
+		.lt_workprogress_video{
+			margin-bottom:30px;
+			.lt_video_overlay{
+				opacity:1;
+				.lt_video_overlay_inner{	
+					i{
+						font-size:20px;
+						width:60px;
+						height:60px;
+						line-height:60px;
+						padding-left:6px;
+					}
+				}	
+			}
+		}
+	}		
+}

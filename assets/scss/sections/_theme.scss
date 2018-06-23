@@ -1,0 +1,89 @@
+/*==========| (1). body css |==========*/
+//variable scss
+@import "core";
+//typography scss
+@import "typography";
+
+
+.lt_flex_grid{
+	display: -webkit-flex;
+	display: flex;
+	margin-left:-15px;
+	margin-right:-15px;
+	.lt_flex_cell{
+		padding:0 15px;
+		-webkit-flex: 1;
+				flex: 1;
+	}
+}
+
+.lt_padding_40{
+	padding:$mob-padding 0;
+}
+.lt_padding_80{
+	padding:$min-padding 0;
+}
+.lt_padding_top_80{
+	padding-top:$min-padding;
+}
+.lt_padding_100{
+	padding:100px 0;
+}
+.lt_padding_top_100{
+	padding-top:$max-padding;
+}
+.lt_padding_bottom_150{
+	padding-bottom:$full-padding;
+}		
+
+
+
+/*==========| responsive body css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	p{
+		font-size:$base-font;
+		line-height:22px;
+	}
+	.lt_padding_80{
+		padding:60px 0;
+	}
+	.lt_padding_top_80{
+		padding-top:$tab-padding;
+	}
+	.lt_padding_100{
+		padding:$min-padding 0;
+	}	
+	.lt_padding_top_100{
+		padding-top:$min-padding;
+	}
+	.lt_padding_bottom_150{
+		padding-bottom:$max-padding;
+	}
+}
+
+
+@media (max-width: 767px) {
+	br{
+		display:none;
+	}
+	p{
+		font-size:$base-font;
+		line-height:22px;
+	}
+	.lt_padding_80{
+		padding:40px 0;
+	}
+	.lt_padding_top_80{
+		padding-top:$mob-padding;
+	}
+	.lt_padding_100{
+		padding:$mob-padding+10 0;
+	}	
+	.lt_padding_top_100{
+		padding-top:$mob-padding+10;
+	}
+	.lt_padding_bottom_150{
+		padding-bottom:$tab-padding;
+	}
+}

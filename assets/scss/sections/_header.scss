@@ -1,0 +1,435 @@
+//header style in scss formate
+/*==========| (1). Header Section  css |==========*/
+.lt_header_section{
+	-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,0.2);
+			box-shadow:0 0 6px 0 rgba(0,0,0,0.2);
+    &.lt_home_header{
+    	top:0;
+		left:0;
+		position: fixed;
+	    z-index: 5;
+	    width: 100%;
+	    -webkit-box-shadow:none;
+    			box-shadow:none;
+	    .lt_top_header{
+	    	background:transparent;
+	    	padding:$padding-max 0;
+	    }
+
+	    // navigation container
+		.lt_navigation_container{
+
+			// navigation block
+			.lt_navigation_block{
+				padding:$padding-max;
+				border-radius:8px;
+				&:after{
+					content:'';
+					top:0;
+					right:0;
+					margin-right:$margin;
+					width:1px;
+					height:100%;
+					position:absolute;
+					background:$primary-light;
+				}
+				&:before{
+					content:'';
+					top:0;
+					left:0;
+					margin-left:$margin;
+					width:1px;
+					height:100%;
+					position:absolute;
+					background:$primary-light;
+				}
+				.lt_logo_block{
+					padding-left:15px;
+				}
+			}
+		}		
+    }
+	//top header
+	.lt_top_header{
+		padding:$padding 0;
+		position:relative;
+		z-index:2;
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(to right , $primary-light, $primary-dark); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(to right , $primary-light, $primary-dark); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(to right , $primary-light, $primary-dark); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right , $primary-light, $primary-dark); /* Standard syntax */
+
+		//contact info
+		.lt_top_contact_info{
+			ul{
+				padding:0;
+				margin:0;
+				li{
+					display:inline-block;
+					margin-right:$margin-max;
+					padding:0;
+					a{
+						font-size:$base-font;
+						color:$white;
+						display:block;
+						position:relative;	
+						i{
+							margin-right:$margin;
+						}
+						&:after{
+							content:'';
+							width:0;
+							height:1px;
+							left:0;
+							bottom:0;
+							position:absolute;
+							background:$white;
+							-webkit-transition:0.8s;
+									transition:0.8s;
+						}
+						&:hover,
+						&:focus{
+							&:after{
+								width:100%;;
+							}
+						}
+					}	
+				}
+			}
+		}
+
+		//social links
+		.lt_top_social_links{
+			text-align:right;
+			ul{
+				padding:0;
+				margin:0;
+				li{
+					display:inline-block;
+					margin-left:$margin-max;
+					a{
+						$medium-font:16px;
+						color:$white;
+						display:block;	
+						-webkit-transition:0.3s;
+								transition:0.3s;
+						&:hover,
+						&:focus{
+							color:$primary-hoverdark;
+						}		
+					}	
+				}
+			}
+		}
+	}	
+
+	// navigation container
+	.lt_navigation_container{
+		position:relative;
+		z-index:2;
+		-webkit-transition:0.3s;
+    		transition:0.3s;
+
+		// navigation block
+		.lt_navigation_block{
+			padding:$padding-max 0;
+			background:$white;
+			position:relative;
+		
+			//logo block
+			.lt_logo_block{
+				font-size:$big-fonts+4;
+				font-weight:$bold-weight;
+				padding-top: 2px;
+				text-transform:uppercase;
+				span{
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+				  	-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}
+			}
+
+			//menu block
+			.lt_menu_block{
+				padding:0;
+				.lt_menu{
+					ul{
+						padding:0;
+						margin:0;
+						text-align:right;
+						display: -webkit-flex;
+						display: flex;
+					    -webkit-flex-direction: row;
+					    flex-direction: row;
+					    -webkit-justify-content: flex-end;
+					    justify-content: flex-end;
+						li{
+							display:inline-block;
+							flex:1;
+							margin-left:5px;
+							max-width: -moz-max-content;
+							max-width: -webkit-max-content;
+							max-width: max-content;
+							a{
+								font-size:$base-font;
+								color:$menu-color;
+								font-weight:500;
+								height:34px;
+								line-height:34px;
+								text-transform:uppercase;
+								padding:0px 18px;
+								display:block;
+								border-radius:20px;
+								position:relative;
+								z-index:1;
+								overflow:hidden;
+								-webkit-transition:0.5s;
+										transition:0.5s;
+								&:after{
+									content:'';
+									left:0;
+									top:0;
+									width:100%;
+									height:100%;
+									border-radius:20px;
+									position:absolute;
+									opacity:0;
+									-webkit-transform:scale(0);
+											transform:scale(0);
+									-webkit-transition:0.5s;
+											transition:0.5s;
+									z-index:-1;		
+									background: $primary-dark; /* For browsers that do not support gradients */
+								    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+								    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+								    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+								    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+								}		
+								&:hover,
+								&:focus,
+								&.active{
+									color:$white;
+									&:after{
+										opacity:1;
+										-webkit-transform:scale(1);
+												transform:scale(1);
+									}
+								}		
+
+							}
+							&:hover{
+								a{
+									color:$white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//fixed menu
+    &.fixed_menu{
+    	.lt_navigation_container{
+    		background:$white;
+    		-webkit-box-shadow:0 0 6px 0 rgba(0,0,0,0.2);
+    				box-shadow:0 0 6px 0 rgba(0,0,0,0.2);
+    		.lt_navigation_block{
+    			padding:$padding $padding-max;
+    			.lt_menu_block{
+    				.lt_menu{
+    					ul{
+    						li{
+    							a{
+    								$small-font:12px;
+    							}
+    						}
+    					}
+    				}
+    			}
+    			.lt_logo_block{
+    				padding-left:0;
+    			}
+    			&:after,
+    			&:before{
+    				display:none;
+    			}
+    		}
+    	}
+    }
+
+}
+
+
+
+
+
+
+
+
+/*==========| responsive header section css |==========*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lt_header_section{
+		.lt_top_header{
+			padding:$padding 0;
+		}
+
+		.lt_navigation_container{
+			.lt_navigation_block{
+				padding:15px $padding-max;
+				.lt_menu_block{
+					.lt_menu{
+						ul{
+							li{
+								a{
+									font-size:$small-font;
+									padding:0 12px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}						
+	}	
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_header_section{
+		.lt_top_header{
+			padding:$padding 0;
+		}
+		.lt_navigation_container{
+			background:$white;
+			.lt_navigation_block{
+				padding:$padding 0;
+				.lt_logo_block{
+					font-size:$big-fonts;
+					padding-left:0;
+				}
+
+				.lt_menu_block{
+					.lt_menu{
+						ul{
+							li{
+								a{
+									font-size:$small-font;
+									padding:0 8px;
+									height:28px;
+									line-height:28px;
+								}
+							}
+						}
+					}
+				}	
+				#lt_menu{
+					#lt_menu_hover{
+						.lt_hover_inner{
+							height:28px;
+						}
+					}
+				}	
+				&:after,
+				&:before{
+					display:none;
+				}				
+			}
+		}
+	}			
+}
+
+@media (max-width: 767px) {
+	.lt_header_section{
+		&.lt_home_header{
+			position:relative;
+		}
+		.lt_navigation_container{
+			background:$white;
+			.lt_navigation_block{
+				padding:15px 0!important;
+				&:before,
+				&:after{
+					display:none;		
+				}
+				.lt_logo_block{
+					padding-left: 0!important;
+					padding-top:0;
+				}
+				.lt_mobile_menu_toggle{
+					text-align: right;
+					button{
+						width:40px;
+						padding:0;
+						margin:0;
+						margin-top:4px;
+						border:0;
+						background:transparent;
+						span{
+							height:2px;
+							display:block;
+							margin:5px 0;
+							background: $primary-dark;
+							background: -webkit-linear-gradient($primary-dark, $primary-light);
+							background: -o-linear-gradient($primary-dark, $primary-light);
+							background: -moz-linear-gradient($primary-dark, $primary-light);
+							background: linear-gradient($primary-dark, $primary-light);
+							&:last-child{
+								margin-bottom:0;
+							}
+						}
+						&:focus{
+							outline:none;
+						}
+					}
+				}
+				.lt_menu_block{
+					.lt_menu{
+						ul{
+							display:block;
+							text-align:left;
+							li{
+								display:block;
+								max-width:100%;
+								width:100%;
+								margin:0;
+								a{
+									padding:0;
+									height:42px;
+									line-height:41px;
+									border-radius:0;
+									border-bottom:1px solid #f0f0f0;
+									&:after{
+										display:none;
+									}
+									&:hover,
+									&:focus,
+									&.active{
+										color:$primary-dark;
+										background:transparent;
+										border-bottom:1px solid $primary-dark;
+									}
+								}
+								&:last-child{
+									a{
+										border:0;
+									}
+								}
+							}
+						}
+					}	
+				}	
+			}
+		}
+	}
+	#lt_menu{
+		#lt_menu_hover{
+			display:none;
+		}
+	}
+}
+

@@ -1,0 +1,66 @@
+/* 
+Copyright (c) 2017 Luutaa Technologies.
+------------------------------------------------------------------
+[Master Default Stylesheet]
+Template Name: Antonio HTML Template
+Version: 1.0
+Author: Luutaa Technologies
+Website: http://luutaa.com/
+-------------------------------------------------------------------*/
+/*
+-------------------------------------------------------------------
+[Table of contents]
+1.body css
+2.header section css
+3.banner section css
+4.home section css
+5.about section css
+6.know somthing section css
+7.statistics section css
+8.simple steps section css
+9.checkout section css
+10.services section css
+11.parallax section css after service section
+12.team section css
+13.portfolio section css
+14.brands logo section css
+15.work progress section css
+16.text align parallax section css
+17.price tables section css
+18.blog section css
+19.testimonials sectin css
+20.subscribe section css
+21.contact section css
+22.map section css
+23.footer section css
+24.form elements css
+25.blog single page css
+
+------------------------------------------------------------------*/
+@import "sections/theme";
+@import "sections/header";
+@import "sections/headerv2";
+@import "sections/banner";
+@import "sections/bannerv2";
+@import "sections/about";
+@import "sections/knowsomething";
+@import "sections/statistics";
+@import "sections/simplesteps";
+@import "sections/checkout";
+@import "sections/services";
+@import "sections/afterservice_parallax";
+@import "sections/team";
+@import "sections/portfolio";
+@import "sections/brands";
+@import "sections/workprogress";
+@import "sections/align_parallax";
+@import "sections/pricingtables";
+@import "sections/blog";
+@import "sections/testimonials";
+@import "sections/subscribe";
+@import "sections/contact";
+@import "sections/map";
+@import "sections/footer";
+@import "sections/footerv2";
+@import "sections/forms";
+@import "sections/blogsingle";

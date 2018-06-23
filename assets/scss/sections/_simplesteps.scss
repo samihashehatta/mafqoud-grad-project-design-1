@@ -1,0 +1,292 @@
+//simple steps section
+/*==========| (6). simple steps section  css |==========*/
+.lt_simple_steps_section{
+	background:$bg-light;	
+	.lt_simple_steps_tabs_block{
+
+		//tabs list
+		.lt_tablist{
+			margin:0;
+			padding:0;
+			width:100%;
+			border-bottom:4px solid $border-light;
+			text-align:center;
+			display:-webkit-flex;
+			display:flex;
+			li{
+				display:block;
+				position:relative;
+				-webkit-flex:1;
+						flex:1;
+				a{
+					font-weight:$medium-weight;
+					font-size:$medium-font;
+					color:$text-head;
+					display:block;
+					padding-bottom:25px;
+					position:relative;
+						-webkit-transition:0.3s;
+								transition:0.3s;
+					.lt_step_icon_block{
+						left:50%;
+						bottom:0;
+						margin-left:-12px;
+						margin-bottom:-14px;
+						width:24px;
+						height:24px;
+						background:$white;
+						position:absolute;
+						border:4px solid $border-light;
+						border-radius:50%;
+						text-align:center;
+						line-height:24px;
+						-webkit-transition:0.3s;
+								transition:0.3s;		
+						i{
+							font-size:$big-fonts;
+					    	color:$white;
+					    	-webkit-transform:scale(0);
+					    			transform:scale(0);	
+							-webkit-transition:1s;
+									transition:1s;
+						}
+						
+					}
+				}
+				&:hover,
+				&:focus,
+				&.active{
+					a{
+						color:$primary-dark;
+						//background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+						//background:linear-gradient($primary-dark,$primary-lighttext);
+					  	//-webkit-background-clip: text;
+					  			//background-clip: text;
+					  	//-webkit-text-fill-color: transparent;
+					  			//text-fill-color: transparent;
+						.lt_step_icon_block{
+							border:0;
+							width:40px;
+							height:40px;
+							margin-left:-20px;
+							margin-bottom:-22px;
+							line-height:43px;
+							background: $primary-dark; /* For browsers that do not support gradients */
+						    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+						    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+						    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+						    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+						    i{
+						    	-webkit-transform:scale(1);
+					    				transform:scale(1);
+					    		-webkit-text-fill-color: $white;
+					  					text-fill-color: $white;
+						    }
+						    
+						}
+						.lt_steps{
+							color:$primary-dark;
+							span{
+								color:$primary-dark!important;
+							}
+						}
+					}
+					
+				}
+				&.active{
+					a{
+						color:$primary-dark;
+						font-weight:$medium-weight;
+						margin-top:-20px;
+						.lt_step_icon_block{
+							margin-bottom:-42px;
+						}
+					}
+				}	
+				span{
+					display:inline-block;
+				}		
+			}
+		}
+
+		//tabs content
+		.lt_tabcontent_block{
+			margin-top:120px;
+			position:relative;
+			.tab-content{
+				.tab-pane{
+					padding:40px;
+					position:relative;
+					text-align:center;
+					border:1px solid $border-color;
+					.lt_tab_inner_title{
+						top:0;
+						left:0;
+						width:100%;
+						margin-top:-11px;
+						position:absolute;
+						h3{
+							font-size:$big-fonts;
+							color:$menu-color;
+							font-weight:$dark-weight;
+							margin:0;
+							padding:0 $padding;
+							background:$bg-light;
+							display:inline-block;
+						}
+					}
+					p{
+						font-size:$base-font;
+						line-height:24px;
+						font-weight:$light-weight;
+						color:$text-color;
+						margin:0;
+					}
+					.lt_tabpane_inner{
+
+					}
+					&.active{
+						.lt_tabpane_inner{
+				
+						}
+					}
+				}
+			}
+			&:before{
+				content:'';
+				width:1px;
+				height:70px;
+				left:50%;
+				top:0;
+				margin-top:-98px;
+				position:absolute;
+				background:$border-color;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lt_simple_steps_section{
+		.lt_simple_steps_tabs_block{
+			.lt_tablist{
+				li{
+					a{
+						font-size:$base-font;
+					}
+				}
+			}
+		}
+	}			
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_simple_steps_section{
+		.lt_simple_steps_tabs_block{
+			.lt_tablist{
+				li{
+					a{
+						font-size:$base-font;
+					}
+				}
+			}
+		}
+
+		.lt_simple_steps_tabs_block{
+			.lt_tabcontent_block{
+				margin-top:80px;
+				&:before{
+					height:40px;
+					margin-top:-62px;
+				}
+				.tab-content{
+					.tab-pane{
+						padding:30px;
+					}
+				}	
+			}
+		}	
+	}				
+}
+
+
+
+//responsive style for section
+@media (max-width: 767px){
+	.lt_simple_steps_section{
+		.panel-group{
+			margin-bottom:0;
+			.panel{
+				border-radius:0;
+				ul{
+					padding-left: 18px;	
+					margin-bottom: 20px;	
+				}
+				p{
+					margin-bottom: 20px;
+				}
+				a{
+					&:after{
+						content: '-';
+						position: absolute;
+						height: 100%;
+						font-size: $big-fonts+2;
+						right:0;
+						top:0;
+						text-align: center;
+						margin-top: 0px;
+						-webkit-transition:0.3s;
+						        transition:0.3s;
+					}
+				}
+			}
+		}
+
+		.panel-title a.collapsed:after{
+		  content: '+';
+		  
+		}
+		.nrml_accor_design h4.panel-title{
+			margin-bottom: 0!important;
+		}
+		.nrml_accor_design .panel-default>.panel-heading{
+		  background: none;
+		  border:0;
+		  padding: 0;
+		}
+		.nrml_accor_design .panel-default{
+		  border-color: $border-light;
+		}
+		.nrml_accor_design .panel{
+		  -webkit-box-shadow:none;
+		          box-shadow:none;
+		}
+		.nrml_accor_design .panel-group .panel+.panel {
+		    margin-top: 10px;
+		}
+		.nrml_accor_design .panel-group .panel-heading+.panel-collapse>.panel-body{
+		  border:0;
+		}
+		.nrml_accor_design .panel-title a{
+		  font-size: $medium-font;
+		  padding:15px 20px;
+		  display: block;
+		  position: relative;
+		  overflow: hidden;
+		}
+		.nrml_accor_design .panel-title a.collapsed:after{
+		}
+		.nrml_accor_design .panel-title a:after{
+		  line-height: 50px;
+		  color: $primary-dark;
+		  margin-right: 15px;
+		}
+	}
+}

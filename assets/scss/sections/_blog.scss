@@ -1,0 +1,242 @@
+//blog section
+/*==========| (16). blog section css |==========*/
+.lt_latest_blog_section{
+	.lt_headings_block{
+		margin-bottom:$min-margin;
+	}
+	.lt_blog_carousel_container{
+		.lt_blog_item{
+			margin-bottom:$mob-margin;
+			.lt_blog_image_block{
+				position:relative;
+				.lt_blog_date_block{
+					left:0;
+					top:0;
+					z-index:1;
+					width:75px;
+					height:75px;
+					padding-top:15px;
+					position:absolute;
+					background: $primary-dark; /* For browsers that do not support gradients */
+				    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+				    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+				    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+				    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+				    span{
+				    	font-weight:$light-weight;
+				    	color:$white;
+				    	text-align:center;
+				    	display:block;
+				    	&.lt_blog_date{
+				    		font-size:$font-head+2;
+				    		line-height:24px;
+				    	}
+				    	&.lt_blog_month{
+				    		font-size:$medium-font;
+				    	}
+				    }	
+				}
+			}
+			.lt_blog_content_block{
+				padding:30px 0;
+				.lt_blog_title_block{
+					padding-bottom:20px;
+					a{
+						font-size:$medium-font;
+						font-weight:$medium-weight;
+						color:$menu-color;
+						display:block;
+					}
+				}
+				p{
+					font-size:$base-font;
+					line-height:24px;
+					color:$text-head;
+					margin-bottom:20px;
+				}
+				.lt_blog_readmore_btn{
+					a{
+						font-size:$base-font;
+						color:$primary-dark;
+						display:inline-block;
+						position:relative;
+						&:after{
+							content:'';
+							width:0;
+							height:1px;
+							left:0;
+							bottom:0;
+							position:absolute;
+							background: $primary-dark; /* For browsers that do not support gradients */
+						    background: -webkit-linear-gradient(left, $primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+						    background: -o-linear-gradient(right, $primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+						    background: -moz-linear-gradient(right, $primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+						    background: linear-gradient(right, $primary-dark, $primary-light); /* Standard syntax */
+							-webkit-transition:0.3s;
+									transition:0.3s;	
+						}
+						&:hover,
+						&:focus{
+							&:after{
+								width:100%;
+							}
+						}	
+					}
+				}
+			}
+		}
+		.owl-controls{
+			display:inline-block;
+			position:absolute;
+			left:50%;
+			bottom:0;
+			margin-bottom:-30px;
+			-webkit-transform: translateX(-50%);
+					transform: translateX(-50%);
+
+			//owl nav
+			.owl-nav{
+				width:100%;
+				height:20px;
+				margin:auto;
+				position:absolute;
+				z-index:2;
+				.owl-prev{
+					font-size:0;
+					left:0;
+					top:50%;
+					margin-top:-5px;
+					margin-left:-47px;
+					position:absolute;
+					&:before{
+						font-size:$big-fonts+4;
+						color:$text-head;
+						content:'\f177';
+						margin-top:-10px;
+						position:absolute;
+						font-family:FontAwesome;
+
+					}
+					&:hover{
+						&:before{
+							color:$primary-dark;
+						}	
+					}
+				}
+				.owl-next{
+					font-size:0;
+					right:0;
+					top:50%;
+					margin-top:-5px;
+					margin-right:-25px;
+					position:absolute;	
+					&:before{
+						font-size:$big-fonts+4;
+						color:$text-head;
+						content:'\f178';
+						margin-top:-10px;
+						position:absolute;
+						font-family:FontAwesome;
+						-webkit-transition:0.3s;
+								transition:0.3s;
+					}
+					&:hover{
+						&:before{
+							color:$primary-dark;
+						}
+					}
+				}
+			}
+
+			//owl dots
+			.owl-dots{
+				min-width:50px;
+				padding:0 25px;
+				text-align:center;
+				border-left:2px solid $border-color;
+				border-right:2px solid $border-color;
+				.owl-dot{
+					width:10px;
+					height:10px;
+					border-radius:50%;
+					background:$border-color;
+					display:inline-block;
+					margin:0 5px;
+					position: relative;
+    				z-index: 2;
+					&.active{
+						background:$primary-light;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+/*==========| responsive blog section css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px){
+	.lt_latest_blog_section{
+		.lt_headings_block{
+			margin-bottom:$tab-margin;
+		}
+	}	
+}
+
+
+@media (max-width: 767px){
+	.lt_latest_blog_section{
+		.lt_headings_block{
+			margin-bottom:$mob-margin;
+		}
+
+		.lt_blog_carousel_container{
+			.lt_blog_item{
+				margin-bottom:$margin-max;
+			}
+			.owl-controls{
+				position:relative;
+				display:block;
+				left:inherit;
+				margin:0;
+				width: 150px;
+    			margin: auto;
+				-webkit-transform:none;
+						transform:none;
+				.owl-dots{
+					display:none!important;
+				}
+				.owl-nav{
+					width:100%;
+					display:table;
+					position:relative;
+					.owl-prev{
+						float:left;
+						top:inherit;
+						margin-left:0;
+						position:relative;
+						&::before{
+							margin-top:0;
+							position:relative;
+						}
+					}
+					.owl-next{
+						float:right;
+						top:inherit;
+						margin-right:0;
+						position:relative;
+						&:before{
+							margin-top:0;
+							position:relative;
+						}
+					}
+				}
+			}
+		}		
+	}	
+}

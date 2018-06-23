@@ -1,0 +1,43 @@
+//form elements
+/*==========| (22). forms elements |==========*/
+.form-control{
+	height:40px;
+	border:0;
+	border-radius:0;
+	background:$input-bg;
+	-webkit-box-shadow:none;
+			box-shadow:none;
+	&:focus{
+		outline:none;
+		-webkit-box-shadow:none;
+				box-shadow:none;
+	}		
+}
+textarea{
+	&.form-control{
+		height:130px;
+	}
+}
+.lt_input_box{
+	position:relative;
+	&:after{
+		content:'';
+		height:1px;
+		width:0;
+		left:0;
+		bottom:0;
+		position:absolute;
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(left, $primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(right, $primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(right, $primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(right, $primary-dark, $primary-light); /* Standard syntax */
+		-webkit-transition:0.8s;
+				transition:0.8s;
+	}
+	&.focusbox{
+		&:after{
+			width:100%;
+		}
+	}
+}

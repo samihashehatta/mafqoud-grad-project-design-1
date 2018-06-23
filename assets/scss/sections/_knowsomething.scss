@@ -1,0 +1,73 @@
+//know something section
+/*==========| (4). know osmthing section  css |==========*/
+.lt_know_something_section{
+	.col-sm-5{
+		padding-right:0;
+		position:relative;
+		z-index:1;
+	}
+	.col-sm-7{
+		padding-left:0;
+	}
+	.lt_know_something_content_block{
+		display:-webkit-flex;
+		display:flex;
+		min-height:450px;
+		.lt_know_something_content_inner{
+			margin:auto;	
+			.lt_headings_block{
+				text-align:left;
+				margin-bottom:40px;
+			}
+			p{
+				color:$text-color;
+				margin-bottom:30px;
+			}
+			.lt_btn_block{
+				padding-top:10px;
+			}
+		}	
+	}
+}
+
+
+/*==========| responsive know osmthing section  css |==========*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lt_know_something_section{
+		.lt_know_something_content_block{
+			.lt_know_something_content_inner{
+				p{
+					margin-bottom:20px;
+				}
+			}
+		}
+	}			
+}
+
+@media (max-width: 767px) {
+	.lt_know_something_section{
+		.col-sm-5{
+			padding-right:15px;
+		}
+		.col-sm-7{
+			padding-left:15px;
+		}
+		.lt_know_something_content_block{
+			min-height:inherit;
+			.lt_know_something_content_inner{
+				text-align:center;
+				.lt_headings_block{
+					text-align:center;
+					margin-bottom:20px;
+				}
+				p{
+					margin-bottom:20px;
+				}
+			}
+		}
+		.lt_know_something_image_block{
+			display:none;
+		}
+	}			
+}

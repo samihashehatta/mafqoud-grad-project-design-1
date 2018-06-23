@@ -1,0 +1,960 @@
+/*==========| typography scss |==========*/
+body {
+  color: #676767; }
+
+a:hover,
+a:focus {
+  color: #d31027; }
+
+.lt_btn {
+  color: #fff; }
+  .lt_btn.lt_btnwhite span {
+    background: -webkit-linear-gradient(#d31027, #ec4d60);
+    background: linear-gradient(#d31027, #ec4d60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+  .lt_btn.lt_btnwhite:before {
+    border: 2px solid #fff; }
+  .lt_btn.lt_btnwhite:after {
+    background: #fff; }
+  .lt_btn.lt_btnwhite:hover span, .lt_btn.lt_btnwhite:focus span {
+    -webkit-text-fill-color: #fff;
+    text-fill-color: #fff; }
+  .lt_btn.lt_inverse {
+    color: #fff;
+    border: 2px solid #fff;
+    background: transparent; }
+    .lt_btn.lt_inverse:hover, .lt_btn.lt_inverse:focus {
+      background: #fff; }
+      .lt_btn.lt_inverse:hover span, .lt_btn.lt_inverse:focus span {
+        background: -webkit-linear-gradient(#d31027, #ec4d60);
+        background: linear-gradient(#d31027, #ec4d60);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent; }
+  .lt_btn.lt_btnwhitev2 span {
+    color: #fff; }
+  .lt_btn.lt_btnwhitev2:before {
+    border: 2px solid #d31027; }
+  .lt_btn.lt_btnwhitev2:after {
+    background: #d31027; }
+  .lt_btn.lt_btnwhitev2:hover span, .lt_btn.lt_btnwhitev2:focus span {
+    -webkit-text-fill-color: #d31027;
+    text-fill-color: #d31027; }
+  .lt_btn.lt_inversev2 {
+    color: #d31027;
+    border: 2px solid #d31027;
+    background: transparent; }
+    .lt_btn.lt_inversev2:hover, .lt_btn.lt_inversev2:focus {
+      background: #d31027; }
+      .lt_btn.lt_inversev2:hover span, .lt_btn.lt_inversev2:focus span {
+        color: #fff; }
+  .lt_btn.lt_btn_primay {
+    background-image: #d31027;
+    /* For browsers that do not support gradients */
+    background-image: -webkit-linear-gradient(to right, #d31027 0%, #fd586c 51%, #ea384d 100%);
+    background-image: -o-linear-gradient(to right, #d31027 0%, #fd586c 51%, #ea384d 100%);
+    background-image: -moz-linear-gradient(to right, #d31027 0%, #fd586c 51%, #ea384d 100%);
+    background-image: linear-gradient(to right, #d31027 0%, #fd586c 51%, #ea384d 100%); }
+    .lt_btn.lt_btn_primay:hover, .lt_btn.lt_btn_primay:focus {
+      color: #fff; }
+
+blockquote {
+  border-left: 5px solid #d31027;
+  background: #fff3f4;
+  color: #d31027; }
+
+.lt_headings_block h1 {
+  color: #2a2a2a; }
+
+.lt_headings_block h4 {
+  border-bottom: 1px solid #ec4d60;
+  background: -webkit-linear-gradient(#d31027, #ec4d60);
+  background: linear-gradient(#d31027, #ec4d60);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent; }
+
+.lt_headings_block p {
+  color: #676767; }
+
+.lt_headings_block.inverse h1 {
+  color: #fff; }
+
+.lt_headings_block.inverse h4 {
+  border-bottom: 1px solid #fff;
+  -webkit-text-fill-color: #fff;
+  text-fill-color: #fff; }
+
+.lt_headings_block.inverse p {
+  color: #fff; }
+
+/*==========| (1). Header Section  css |==========*/
+.lt_header_section.lt_home_header .lt_top_header {
+  background: transparent; }
+
+.lt_header_section.lt_home_header .lt_navigation_container .lt_navigation_block:after {
+  content: '';
+  background: #ea384d; }
+
+.lt_header_section.lt_home_header .lt_navigation_container .lt_navigation_block:before {
+  background: #ea384d; }
+
+.lt_header_section .lt_top_header {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, #ea384d, #d31027);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, #ea384d, #d31027);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, #ea384d, #d31027);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ea384d, #d31027);
+  /* Standard syntax */ }
+  .lt_header_section .lt_top_header .lt_top_contact_info ul li a {
+    color: #fff; }
+    .lt_header_section .lt_top_header .lt_top_contact_info ul li a:after {
+      background: #fff; }
+  .lt_header_section .lt_top_header .lt_top_social_links {
+    text-align: right; }
+    .lt_header_section .lt_top_header .lt_top_social_links ul li a {
+      color: #fff; }
+      .lt_header_section .lt_top_header .lt_top_social_links ul li a:hover, .lt_header_section .lt_top_header .lt_top_social_links ul li a:focus {
+        color: #b9071c; }
+
+.lt_header_section .lt_navigation_container .lt_navigation_block {
+  background: #fff; }
+  .lt_header_section .lt_navigation_container .lt_navigation_block .lt_logo_block span {
+    background: -webkit-linear-gradient(#d31027, #ec4d60);
+    background: linear-gradient(#d31027, #ec4d60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+  .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block {
+    padding: 0; }
+    .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:after {
+      background: #d31027;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#d31027, #ea384d);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#d31027, #ea384d);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#d31027, #ea384d);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#d31027, #ea384d);
+      /* Standard syntax */ }
+    .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:hover, .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:focus, .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a.active {
+      color: #fff; }
+    .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li:hover a {
+      color: #fff; }
+
+.lt_header_section.fixed_menu .lt_navigation_container {
+  background: #fff; }
+
+#lt_menu #lt_menu_hover .lt_hover_inner {
+  background: #d31027;
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  background: -o-linear-gradient(#d31027, #ea384d);
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  background: linear-gradient(#d31027, #ea384d); }
+
+/*==========| responsive header section css ==========*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lt_header_section .lt_navigation_container {
+    background: #fff; } }
+
+@media (max-width: 767px) {
+  .lt_header_section .lt_navigation_container {
+    background: #fff; }
+    .lt_header_section .lt_navigation_container .lt_navigation_block .lt_mobile_menu_toggle button {
+      background: transparent; }
+      .lt_header_section .lt_navigation_container .lt_navigation_block .lt_mobile_menu_toggle button span {
+        background: #d31027;
+        background: -webkit-linear-gradient(#d31027, #ea384d);
+        background: -o-linear-gradient(#d31027, #ea384d);
+        background: -moz-linear-gradient(#d31027, #ea384d);
+        background: linear-gradient(#d31027, #ea384d); }
+    .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a {
+      border-bottom: 1px solid #f0f0f0; }
+      .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:hover, .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:focus, .lt_header_section .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a.active {
+        color: #d31027;
+        background: transparent;
+        border-bottom: 1px solid #d31027; } }
+
+/*==========| (1.2). Header Section  css |==========*/
+.lt_header_sectionv2 .lt_top_header {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(to right, #ea384d, #d31027);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(to right, #ea384d, #d31027);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(to right, #ea384d, #d31027);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, #ea384d, #d31027);
+  /* Standard syntax */ }
+  .lt_header_sectionv2 .lt_top_header .lt_top_contact_info ul li a {
+    color: #fff; }
+    .lt_header_sectionv2 .lt_top_header .lt_top_contact_info ul li a:after {
+      background: #fff; }
+  .lt_header_sectionv2 .lt_top_header .lt_top_social_links ul li a {
+    color: #fff; }
+    .lt_header_sectionv2 .lt_top_header .lt_top_social_links ul li a:hover, .lt_header_sectionv2 .lt_top_header .lt_top_social_links ul li a:focus {
+      color: #b9071c; }
+
+.lt_header_sectionv2 .lt_navigation_container {
+  background: #fff; }
+  .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_logo_block span {
+    background: -webkit-linear-gradient(#d31027, #ec4d60);
+    background: linear-gradient(#d31027, #ec4d60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+  .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a {
+    color: #414141; }
+    .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:after {
+      background: #d31027;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#d31027, #ea384d);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#d31027, #ea384d);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#d31027, #ea384d);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#d31027, #ea384d);
+      /* Standard syntax */ }
+    .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:hover, .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:focus, .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a.active {
+      color: #fff; }
+  .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li:hover a {
+    color: #fff; }
+
+.lt_header_sectionv2.fixed_menu .lt_navigation_container {
+  background: #fff; }
+
+/*==========| responsive header section css |==========*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lt_header_sectionv2 .lt_navigation_container {
+    background: #fff; } }
+
+@media (max-width: 767px) {
+  .lt_header_sectionv2 .lt_navigation_container {
+    background: #fff; }
+    .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_mobile_menu_toggle button {
+      background: transparent; }
+      .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_mobile_menu_toggle button span {
+        background: #d31027;
+        background: -webkit-linear-gradient(#d31027, #ea384d);
+        background: -o-linear-gradient(#d31027, #ea384d);
+        background: -moz-linear-gradient(#d31027, #ea384d);
+        background: linear-gradient(#d31027, #ea384d); }
+    .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a {
+      border-bottom: 1px solid #f0f0f0; }
+      .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:hover, .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a:focus, .lt_header_sectionv2 .lt_navigation_container .lt_navigation_block .lt_menu_block .lt_menu ul li a.active {
+        color: #d31027;
+        background: transparent;
+        border-bottom: 1px solid #d31027; } }
+
+/*==========| (2). Banner section css |==========*/
+.lt_banner_section {
+  background-color: #d31027; }
+  .lt_banner_section .lt_header_overlay {
+    background: #d31027;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d31027, #ea384d);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d31027, #ea384d);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d31027, #ea384d);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d31027, #ea384d);
+    /* Standard syntax */ }
+  .lt_banner_section .lt_header_text_content .lt_header_text_content_inner h1 {
+    color: #fff; }
+  .lt_banner_section .lt_header_text_content .lt_header_text_content_inner p {
+    color: #fff; }
+
+/*==========| (2.2). Banner section version 2 css |==========*/
+.lt_banner_sectionv2 .lt_header_banner .owl-controls .owl-nav .owl-prev {
+  color: #fff; }
+
+.lt_banner_sectionv2 .lt_header_banner .owl-controls .owl-nav .owl-next {
+  color: #fff;
+  background: #757575; }
+
+.lt_banner_sectionv2 .lt_header_text_content .lt_header_text_content_inner h1 {
+  color: #2a2a2a; }
+
+.lt_banner_sectionv2 .lt_header_text_content .lt_header_text_content_inner p {
+  color: #676767; }
+
+/*==========| (3). about section  css |==========*/
+.lt_about_section {
+  background: #f9f9f9; }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner .lt_about_icon_block i {
+    background: -webkit-linear-gradient(#d31027, #ec4d60);
+    background: linear-gradient(#d31027, #ec4d60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner .lt_about_content_block p {
+    color: #676767; }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner:hover:after, .lt_about_section .lt_about_section_blocks .lt_about_block_inner:focus:after {
+    background: #d31027;
+    /* For browsers that do not support gradients */ }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner:hover .lt_about_icon_block i, .lt_about_section .lt_about_section_blocks .lt_about_block_inner:focus .lt_about_icon_block i {
+    -webkit-text-fill-color: #fff;
+    text-fill-color: #fff; }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner:hover .lt_about_content_block h4, .lt_about_section .lt_about_section_blocks .lt_about_block_inner:focus .lt_about_content_block h4 {
+    color: #fff; }
+  .lt_about_section .lt_about_section_blocks .lt_about_block_inner:hover .lt_about_content_block p, .lt_about_section .lt_about_section_blocks .lt_about_block_inner:focus .lt_about_content_block p {
+    color: #fff; }
+
+/*==========| (4). know osmthing section  css |==========*/
+/*==========| (5). statistics section  css |==========*/
+.lt_statistics_section .lt_statistics_text_block .lt_static_text_inner .lt_headings_block h1 {
+  color: #fff; }
+
+.lt_statistics_section .lt_statistics_text_block .lt_static_text_inner .lt_headings_block h4 {
+  border-bottom: 1px solid #fff;
+  -webkit-text-fill-color: #fff;
+  text-fill-color: #fff; }
+
+.lt_statistics_section .lt_statistics_text_block .lt_static_text_inner p {
+  color: #c8c8c8; }
+
+.lt_statistics_section .lt_statistics_text_block .lt_static_text_inner:after {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+
+.lt_statistics_section .lt_statistics_text_block .lt_static_text_inner:before {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+
+.lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start .lt_static_block_inner .lt_static_icon_block i {
+  color: #fff; }
+
+.lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start .lt_static_block_inner .lt_static_number_block h2 {
+  color: #fff; }
+
+.lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start .lt_static_block_inner h3 {
+  color: #fff; }
+
+/*==========| responsive statistics section  css |==========*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:first-child {
+    border-right: 1px solid rgba(255, 0, 30, 0.4);
+    border-bottom: 1px solid rgba(255, 0, 30, 0.4); }
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 0, 30, 0.4); }
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:nth-child(3) {
+    border-right: 1px solid rgba(255, 0, 30, 0.4); } }
+
+@media (max-width: 767px) {
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:first-child {
+    border-right: 1px solid rgba(255, 0, 30, 0.4);
+    border-bottom: 1px solid rgba(255, 0, 30, 0.4); }
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:nth-child(2) {
+    border-bottom: 1px solid rgba(255, 0, 30, 0.4); }
+  .lt_statistics_section .lt_theme_statistics_content .lt_statistics_block_start:nth-child(3) {
+    border-right: 1px solid rgba(255, 0, 30, 0.4); } }
+
+/*==========| (6). simple steps section  css |==========*/
+.lt_simple_steps_section {
+  background: #f9f9f9; }
+  .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist {
+    border-bottom: 4px solid #e2e2e2; }
+    .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li a {
+      color: #757575; }
+      .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li a .lt_step_icon_block {
+        background: #fff;
+        border: 4px solid #e2e2e2; }
+        .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li a .lt_step_icon_block i {
+          color: #fff; }
+    .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:hover a, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:focus a, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a {
+      color: #d31027; }
+      .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:hover a .lt_step_icon_block, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:focus a .lt_step_icon_block, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a .lt_step_icon_block {
+        background: #d31027;
+        /* For browsers that do not support gradients */
+        background: -webkit-linear-gradient(#d31027, #ea384d);
+        /* For Safari 5.1 to 6.0 */
+        background: -o-linear-gradient(#d31027, #ea384d);
+        /* For Opera 11.1 to 12.0 */
+        background: -moz-linear-gradient(#d31027, #ea384d);
+        /* For Firefox 3.6 to 15 */
+        background: linear-gradient(#d31027, #ea384d);
+        /* Standard syntax */ }
+        .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:hover a .lt_step_icon_block i, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:focus a .lt_step_icon_block i, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a .lt_step_icon_block i {
+          -webkit-text-fill-color: #fff;
+          text-fill-color: #fff; }
+      .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:hover a .lt_steps, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:focus a .lt_steps, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a .lt_steps {
+        color: #d31027; }
+        .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:hover a .lt_steps span, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li:focus a .lt_steps span, .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a .lt_steps span {
+          color: #d31027 !important; }
+    .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tablist li.active a {
+      color: #d31027; }
+  .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tabcontent_block .tab-content .tab-pane {
+    border: 1px solid #c8c8c8; }
+    .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tabcontent_block .tab-content .tab-pane .lt_tab_inner_title h3 {
+      color: #414141;
+      background: #f9f9f9; }
+    .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tabcontent_block .tab-content .tab-pane p {
+      color: #676767; }
+  .lt_simple_steps_section .lt_simple_steps_tabs_block .lt_tabcontent_block:before {
+    background: #c8c8c8; }
+
+@media (max-width: 767px) {
+  .lt_simple_steps_section .nrml_accor_design .panel-default {
+    border-color: #e2e2e2; }
+  .lt_simple_steps_section .nrml_accor_design .panel-title a:after {
+    color: #d31027; } }
+
+/*==========| (7). checkout section  css |==========*/
+.lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li .lt_checkout_list_inner {
+    text-align: center; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li .lt_checkout_list_inner span {
+      color: rgba(135, 0, 16, 0.4); }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li .lt_checkout_list_inner h4 {
+      color: #fff; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li .lt_checkout_list_inner p {
+      color: #e2e2e2; }
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_list ul li .lt_checkout_list_inner span {
+    background: #fff; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_list ul li .lt_checkout_list_inner span i {
+      background: -webkit-linear-gradient(#d31027, #ec4d60);
+      background: linear-gradient(#d31027, #ec4d60);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent; }
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_list ul li .lt_checkout_list_inner h4 {
+    color: #fff; }
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_list ul li .lt_checkout_list_inner p {
+    color: #e2e2e2; }
+
+/*==========| responsive checkout section  css |==========*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li {
+    padding: 15px; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:first-child {
+      border-right: 1px solid #ea384d;
+      border-bottom: 1px solid #ea384d; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:nth-child(2) {
+      border-bottom: 1px solid #ea384d; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:nth-child(3) {
+      border-right: 1px solid #ea384d; } }
+
+@media (max-width: 767px) {
+  .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block {
+    padding: 0; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:first-child {
+      border-right: 1px solid #ea384d;
+      border-bottom: 1px solid #ea384d; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:nth-child(2) {
+      border-bottom: 1px solid #ea384d; }
+    .lt_checkout_section .lt_checkout_features_container .lt_chackout_features_row .lt_checkout_features_content_block.lt_checkout_feature_grid ul li:nth-child(3) {
+      border-right: 1px solid #ea384d; } }
+
+/*==========| (8). service Section css |==========*/
+.lt_servisec_section {
+  background: #f9f9f9; }
+  .lt_servisec_section .lt_services_blocks_container .lt_services_block .lt_services_block_inner {
+    background: #fff; }
+    .lt_servisec_section .lt_services_blocks_container .lt_services_block .lt_services_block_inner span i {
+      background: -webkit-linear-gradient(#d31027, #ec4d60);
+      background: linear-gradient(#d31027, #ec4d60);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent; }
+    .lt_servisec_section .lt_services_blocks_container .lt_services_block .lt_services_block_inner h4 {
+      color: #2a2a2a; }
+    .lt_servisec_section .lt_services_blocks_container .lt_services_block .lt_services_block_inner p {
+      color: #676767; }
+
+/*==========| (9). parallax section css after service section |==========*/
+.lt_after_services_parallax_section .lt_after_services_parallax_overlay {
+  background: rgba(0, 0, 0, 0.7); }
+
+.lt_after_services_parallax_section h3 {
+  color: #fff; }
+
+/*==========| (10). team section css |==========*/
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-stage-outer .owl-item .lt_team_item {
+  background: #d31027; }
+  .lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-stage-outer .owl-item .lt_team_item .lt_team_img_overlay {
+    background: #d31027; }
+
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-nav .owl-prev:before {
+  color: #676767; }
+
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-nav .owl-prev:hover:before {
+  color: #d31027; }
+
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-nav .owl-next:before {
+  color: #676767; }
+
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-nav .owl-next:hover:before {
+  color: #d31027; }
+
+.lt_team_section .lt_team_carousel .lt_team_slider_outer .lt_team_slider.owl-carousel .owl-nav:before {
+  background: #c8c8c8; }
+
+.lt_team_section .lt_team_details_container {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+  .lt_team_section .lt_team_details_container .lt_team_member_detail_block h3 {
+    color: #fff; }
+  .lt_team_section .lt_team_details_container .lt_team_member_detail_block h5 {
+    color: #fff; }
+  .lt_team_section .lt_team_details_container .lt_team_member_detail_block p {
+    color: #e2e2e2; }
+  .lt_team_section .lt_team_details_container .lt_team_member_detail_block .lt_team_detail_social_block ul li a {
+    color: #fff; }
+
+/*==========| (11). portfolio section css |==========*/
+.lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a {
+  color: #757575; }
+  .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a:hover, .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a:focus, .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a.active {
+    color: #fff;
+    background: #d31027;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#d31027, #ea384d);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#d31027, #ea384d);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#d31027, #ea384d);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#d31027, #ea384d);
+    /* Standard syntax */ }
+
+.lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer {
+  background: #2a2a2a; }
+  .lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer .lt_portfolio_block .lt_portfolio_block_inner .lt_portfolio_image_block .lt_portfolio_hover_block {
+    background: rgba(211, 16, 39, 0.7); }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer .lt_portfolio_block .lt_portfolio_block_inner .lt_portfolio_image_block .lt_portfolio_hover_block .lt_portfolio_hover_inner h2 {
+      color: #fff; }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer .lt_portfolio_block .lt_portfolio_block_inner .lt_portfolio_image_block .lt_portfolio_hover_block .lt_portfolio_hover_inner p {
+      color: #fff; }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer .lt_portfolio_block .lt_portfolio_block_inner .lt_portfolio_image_block .lt_portfolio_hover_block .lt_portfolio_hover_inner .lt_portfolio_hover_link_block a {
+      color: #fff; }
+      .lt_portfolio_section .lt_portfolio_content_container .lt_protfolio_content_blocks .lt_portfolio_content_block_outer .lt_portfolio_block .lt_portfolio_block_inner .lt_portfolio_image_block .lt_portfolio_hover_block .lt_portfolio_hover_inner .lt_portfolio_hover_link_block a i {
+        color: #fff; }
+
+/*==========| responsive portfolio section css |==========*/
+@media (max-width: 767px) {
+  .lt_portfolio_section .lt_headings_block {
+    margin-bottom: 40px; }
+  .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul {
+    background: rgba(255, 255, 255, 0.9); }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a {
+      color: #757575; }
+      .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a:hover, .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a:focus, .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list ul li a.active {
+        color: #d31027;
+        background: none; }
+  .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list .lt_mobview_portfolio_nav {
+    background: #fff;
+    border-bottom: 1px solid #d31027; }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list .lt_mobview_portfolio_nav span {
+      color: #d31027; }
+    .lt_portfolio_section .lt_portfolio_content_container .lt_portfolio_list .lt_mobview_portfolio_nav:after {
+      border-right: 1px solid #d31027;
+      border-bottom: 1px solid #d31027; } }
+
+/*==========| (12). brands logo section css |==========*/
+.lt_brand_logos_section {
+  background: #f9f9f9; }
+
+/*==========| (13). work progress section css |==========*/
+.lt_work_progress_section .lt_workprogress_video .lt_video_overlay .lt_video_overlay_inner i {
+  color: #d31027;
+  background: #fff; }
+
+.lt_work_progress_section .lt_workprogress_video .lt_video_overlay .lt_video_overlay_inner h3 {
+  color: #fff; }
+
+.lt_work_progress_section .lt_workprogress_bars_container .lt_workpregress_row .lt_workprogress_loader {
+  background: #c8c8c8; }
+  .lt_work_progress_section .lt_workprogress_bars_container .lt_workpregress_row .lt_workprogress_loader .lt_wp_loader_inner {
+    background: #d31027; }
+
+/*==========| (14). align parallax section css |==========*/
+.lt_text_align_parallax_section .lt_textalign_parallax_overlay {
+  background: rgba(0, 0, 0, 0.7); }
+
+.lt_text_align_parallax_section .lt_text_align_parallax_content_outer .lt_text_align_parallax_inner .lt_textalign_parallax_text h1 {
+  color: #fff; }
+
+.lt_text_align_parallax_section .lt_text_align_parallax_content_outer .lt_text_align_parallax_inner .lt_textalign_parallax_text p {
+  color: #fff; }
+
+/*==========| (15). price tables section css |==========*/
+.lt_price_table_section {
+  background: #f9f9f9; }
+  .lt_price_table_section .lt_pricing_table_block {
+    background: #fff; }
+    .lt_price_table_section .lt_pricing_table_block .lt_pricetable_title_block .lt_pricetable_title_inner h1 {
+      color: #fff; }
+    .lt_price_table_section .lt_pricing_table_block .lt_pricetable_title_block .lt_pricetable_title_inner h5 {
+      color: #fff; }
+    .lt_price_table_section .lt_pricing_table_block .lt_pricetable_title_block .lt_pricetable_title_overlay {
+      background: #d31027;
+      /* For browsers that do not support gradients */
+      background: -webkit-linear-gradient(#d31027, #ea384d);
+      /* For Safari 5.1 to 6.0 */
+      background: -o-linear-gradient(#d31027, #ea384d);
+      /* For Opera 11.1 to 12.0 */
+      background: -moz-linear-gradient(#d31027, #ea384d);
+      /* For Firefox 3.6 to 15 */
+      background: linear-gradient(#d31027, #ea384d);
+      /* Standard syntax */ }
+    .lt_price_table_section .lt_pricing_table_block .lt_pricetable_content .lt_pt_list ul li {
+      color: #414141; }
+      .lt_price_table_section .lt_pricing_table_block .lt_pricetable_content .lt_pt_list ul li:before {
+        color: #24db00; }
+      .lt_price_table_section .lt_pricing_table_block .lt_pricetable_content .lt_pt_list ul li.lt_not_allowed:before {
+        color: #ff0000; }
+    .lt_price_table_section .lt_pricing_table_block .lt_pricetable_content .lt_pt_list:after {
+      background: #d31027;
+      /* For browsers that do not support gradients */
+      background: -webkit-radial-gradient(#d31027, #fff, #fff);
+      /* Safari 5.1 to 6.0 */
+      background: -o-radial-gradient(#d31027, #fff, #fff);
+      /* For Opera 11.6 to 12.0 */
+      background: -moz-radial-gradient(#d31027, #fff, #fff);
+      /* For Firefox 3.6 to 15 */
+      background: radial-gradient(#d31027, #fff, #fff);
+      /* Standard syntax (must be last) */ }
+
+/*==========| (16). blog section css |==========*/
+.lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_image_block .lt_blog_date_block {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+  .lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_image_block .lt_blog_date_block span {
+    color: #fff; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_content_block .lt_blog_title_block a {
+  color: #414141; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_content_block p {
+  color: #757575; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_content_block .lt_blog_readmore_btn a {
+  color: #d31027; }
+  .lt_latest_blog_section .lt_blog_carousel_container .lt_blog_item .lt_blog_content_block .lt_blog_readmore_btn a:after {
+    background: #d31027;
+    /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left, #d31027, #ea384d);
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, #d31027, #ea384d);
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #d31027, #ea384d);
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(right, #d31027, #ea384d);
+    /* Standard syntax */ }
+
+.lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-nav .owl-prev:before {
+  color: #757575; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-nav .owl-prev:hover:before {
+  color: #d31027; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-nav .owl-next:before {
+  color: #757575; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-nav .owl-next:hover:before {
+  color: #d31027; }
+
+.lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-dots {
+  border-left: 2px solid #c8c8c8;
+  border-right: 2px solid #c8c8c8; }
+  .lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-dots .owl-dot {
+    background: #c8c8c8; }
+    .lt_latest_blog_section .lt_blog_carousel_container .owl-controls .owl-dots .owl-dot.active {
+      background: #ea384d; }
+
+/*==========| (17). testimonials section css |==========*/
+.lt_testimonials_section .lt_testimonials_carousel_container .lt_testimonials_carousel_block .lt_testi_before_icon i {
+  color: #fff; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .lt_testimonials_carousel_block .lt_testimonial_text_block p {
+  color: #fff; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .lt_testimonials_carousel_block .lt_testimonial_user_info_block .lt_testi_userdetail_block h3 {
+  color: #fff; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .lt_testimonials_carousel_block .lt_testimonial_user_info_block .lt_testi_userdetail_block h5 {
+  color: #e2e2e2; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .owl-controls .owl-nav .owl-prev:before {
+  color: #fff; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .owl-controls .owl-nav .owl-prev:hover:before {
+  color: #000; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .owl-controls .owl-nav .owl-next:before {
+  color: #fff; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .owl-controls .owl-nav .owl-next:hover:before {
+  color: #000; }
+
+.lt_testimonials_section .lt_testimonials_carousel_container .owl-controls .owl-dots .owl-dot {
+  background: #fff; }
+
+.lt_testimonials_section .lt_testimonials_overlay {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+
+/*==========| (18). subscribe section css |==========*/
+.lt_subscribe_section {
+  text-align: center; }
+  .lt_subscribe_section h1 {
+    color: #2a2a2a; }
+  .lt_subscribe_section .lt_subscribe_form_block {
+    border: 1px solid #c8c8c8;
+    -webkit-box-shadow: inset 0 0 15px #dfdfdf;
+    box-shadow: inset 0 0 15px #dfdfdf; }
+    .lt_subscribe_section .lt_subscribe_form_block button {
+      background: transparent; }
+      .lt_subscribe_section .lt_subscribe_form_block button i {
+        background: -webkit-linear-gradient(#d31027, #ec4d60);
+        background: linear-gradient(#d31027, #ec4d60);
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent; }
+    .lt_subscribe_section .lt_subscribe_form_block input {
+      background: transparent; }
+    .lt_subscribe_section .lt_subscribe_form_block.focusbox {
+      border: 1px solid #d31027; }
+  .lt_subscribe_section ::-webkit-input-placeholder {
+    /* Chrome */
+    color: #c2c2c2; }
+  .lt_subscribe_section :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #c2c2c2; }
+  .lt_subscribe_section ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #c2c2c2;
+    opacity: 1; }
+  .lt_subscribe_section :-moz-placeholder {
+    /* Firefox 4 - 18 */
+    color: #c2c2c2;
+    opacity: 1; }
+
+/*==========| (19). contact section css |==========*/
+.lt_contact_section .lt_contact_overlay {
+  background: rgba(249, 249, 249, 0.95); }
+
+.lt_contact_section .lt_contact_form_block .lt_tks_message .lt_tk_msg_inner h1 {
+  color: #d31027; }
+
+.lt_contact_section .lt_contact_info_block {
+  background: #fff; }
+  .lt_contact_section .lt_contact_info_block h2 {
+    color: #414141; }
+  .lt_contact_section .lt_contact_info_block p {
+    color: #757575; }
+  .lt_contact_section .lt_contact_info_block .lt_connecting_option_block .lt_connecting_block_inner i {
+    background: -webkit-linear-gradient(#d31027, #ec4d60);
+    background: linear-gradient(#d31027, #ec4d60);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
+  .lt_contact_section .lt_contact_info_block .lt_connecting_option_block .lt_connecting_block_inner a, .lt_contact_section .lt_contact_info_block .lt_connecting_option_block .lt_connecting_block_inner p {
+    color: #757575; }
+  .lt_contact_section .lt_contact_info_block .lt_connecting_option_block .lt_connecting_block_inner a:hover, .lt_contact_section .lt_contact_info_block .lt_connecting_option_block .lt_connecting_block_inner a:focus {
+    color: #d31027; }
+
+/*==========| (20). map section css |==========*/
+.lt_google_map_section .lt_map_btn_block a {
+  color: #d31027;
+  background: #fff; }
+
+/*==========| (21). footer section css |========== */
+.lt_footer_section .lt_footer_overlay {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+
+.lt_footer_section .lt_footer_logo_block a {
+  color: #fff; }
+
+.lt_footer_section .lt_footer_menu_block .lt_footer_menu ul li a {
+  color: #fff; }
+  .lt_footer_section .lt_footer_menu_block .lt_footer_menu ul li a:hover, .lt_footer_section .lt_footer_menu_block .lt_footer_menu ul li a:focus {
+    color: #b9071c; }
+
+.lt_footer_section .lt_copyright_block .lt_copy_title h3 {
+  color: #fff; }
+  .lt_footer_section .lt_copyright_block .lt_copy_title h3:after {
+    background: #c8c8c8; }
+  .lt_footer_section .lt_copyright_block .lt_copy_title h3:before {
+    background: #c8c8c8; }
+
+.lt_footer_section .lt_copyright_block .lt_footer_text_block p {
+  color: #c8c8c8; }
+
+.lt_footer_section .lt_copyright_block .footer_social_block {
+  text-align: center; }
+  .lt_footer_section .lt_copyright_block .footer_social_block .footer_social span {
+    color: #fff; }
+  .lt_footer_section .lt_copyright_block .footer_social_block .footer_social ul li a {
+    color: #b9071c; }
+    .lt_footer_section .lt_copyright_block .footer_social_block .footer_social ul li a:hover, .lt_footer_section .lt_copyright_block .footer_social_block .footer_social ul li a:focus {
+      color: #fff; }
+
+.lt_footer_section .scrollToTop {
+  color: #ea384d;
+  background: #f9f9f9; }
+  .lt_footer_section .scrollToTop:hover, .lt_footer_section .scrollToTop:focus {
+    color: #fff;
+    background: #b9071c; }
+
+/*==========| (21.2). footer section css |==========*/
+.lt_footer_sectionv2 {
+  background: #ea384d; }
+  .lt_footer_sectionv2 .lt_ftitle h3 {
+    color: #fff; }
+    .lt_footer_sectionv2 .lt_ftitle h3:after {
+      background: #d31027; }
+  .lt_footer_sectionv2 .lt_inner_footer_upper .lt_footer_info_block h2 {
+    color: #fff; }
+  .lt_footer_sectionv2 .lt_inner_footer_upper .lt_footer_info_block p {
+    color: #fff; }
+  .lt_footer_sectionv2 .lt_inner_footer_upper .footer_social ul li a {
+    color: #fff; }
+    .lt_footer_sectionv2 .lt_inner_footer_upper .footer_social ul li a:hover, .lt_footer_sectionv2 .lt_inner_footer_upper .footer_social ul li a:focus {
+      color: #b9071c; }
+  .lt_footer_sectionv2 .lt_footer_menu_block .lt_footer_menu ul li a {
+    color: #fff;
+    display: inline-block; }
+    .lt_footer_sectionv2 .lt_footer_menu_block .lt_footer_menu ul li a:after {
+      background: #fff; }
+  .lt_footer_sectionv2 .lt_copyright_block {
+    background: #d31027; }
+    .lt_footer_sectionv2 .lt_copyright_block .lt_copy_title h3 {
+      color: #f9f9f9; }
+    .lt_footer_sectionv2 .lt_copyright_block .lt_footer_text_block p {
+      color: #c8c8c8; }
+  .lt_footer_sectionv2 .scrollToTop {
+    color: #fff; }
+
+/*==========| responsive footer section css |==========*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .lt_footer_sectionv2 .lt_inner_footer_upper .lt_footer_info_block {
+    border-bottom: 1px solid #d31027; } }
+
+@media (max-width: 767px) {
+  .lt_footer_sectionv2 .lt_inner_footer_upper .lt_footer_info_block {
+    border-bottom: 1px solid #d31027; } }
+
+/*==========| blog page css |==========*/
+.lt_blog_single_page .lt_blog_single_title_info {
+  border-bottom: 1px solid #e2e2e2; }
+
+.lt_blog_single_page .lt_blog_single_nav_block {
+  border-top: 1px solid #e2e2e2; }
+  .lt_blog_single_page .lt_blog_single_nav_block:before {
+    background: #e2e2e2; }
+  .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_left {
+    color: #2a2a2a; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_left:after {
+      border-top: 3px solid #d31027;
+      border-left: 3px solid #d31027; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_left:hover span.lt_blog_title_link {
+      color: #b9071c; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_left:hover span {
+      color: #757575; }
+  .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_right {
+    color: #2a2a2a; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_right:after {
+      border-top: 3px solid #d31027;
+      border-left: 3px solid #d31027; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_right span.lt_singlepage_info {
+      color: #757575; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_right:hover span.lt_blog_title_link {
+      color: #b9071c; }
+    .lt_blog_single_page .lt_blog_single_nav_block .lt_bs_right:hover span {
+      color: #757575; }
+
+/*===== Preloader CSS =====*/
+#preloader {
+  background: #d31027;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#d31027, #ea384d);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#d31027, #ea384d);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#d31027, #ea384d);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#d31027, #ea384d);
+  /* Standard syntax */ }
+
+.sk-folding-cube .sk-cube:before {
+  background-color: #fff; }

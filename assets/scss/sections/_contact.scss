@@ -1,0 +1,239 @@
+//contact section
+/*==========| (19). contact section css |==========*/
+.lt_contact_section{
+	position:relative;
+	background:url(../images/contact.jpg);
+	-webkit-background-position:center bottom;
+			background-position:center bottom;
+	-webkit-background-size:cover;
+			background-size:cover;
+	
+	//contact overlay
+	.lt_contact_overlay{
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+		position:absolute;
+		background:rgba(249, 249, 249,0.95);
+	}
+
+	//contact form block
+	.col-md-7{
+		padding-right:0;
+		position:relative;
+		z-index:3;
+	}
+	.lt_contact_form_block{
+		padding:90px 50px;
+		background:$white;
+		position:relative;
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(127, 94, 180, 0.2);
+				box-shadow: 0px 0px 30px 0px rgba(127, 94, 180, 0.2); 
+		.form-group{
+			margin-bottom:30px;
+			.lt_submit_button{
+				text-align:right;
+			}
+			&:last-child{
+				margin-bottom:0;
+			}
+			.lt_btn{
+				font-size:14px;
+				font-weight:300;
+			}
+		}	
+		.lt_form_out{
+			opacity:0;
+			-webkit-transition:0.1s;
+					transition:0.1s;
+		}	
+		.lt_tks_message{
+			width:100%;
+			height:100%;
+			top:0;
+			left:0;
+			position:absolute;
+			display:-webkit-flex;
+			display:flex;
+			opacity:0;
+			z-index:-2;
+			-webkit-transition:0.5s;
+					transition:0.5s;
+			.lt_tk_msg_inner{
+				padding:30px;
+				margin:auto;
+				text-align:center;
+				h1{
+					font-size:30px;
+					font-weight:$regular-weight;
+					color:$primary-dark;
+					margin-top:0;
+					margin-bottom:15px;
+				}
+				p{
+					font-size:18px;
+					margin-bottom:0;
+				}
+			}
+			&.lt_msg_display{
+				opacity:1;
+				z-index:1;
+			}
+		}
+	}
+
+	//contact info block
+	.col-md-5{
+		padding-left:0;
+		position:relative;
+		z-index:2;
+	}
+	.lt_contact_info_block{
+		padding:50px;
+		margin-top:60px;
+		background:$white;
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(127, 94, 180, 0.2);
+				box-shadow: 0px 0px 30px 0px rgba(127, 94, 180, 0.2); 
+		h2{
+			font-size:$font-head;
+			font-weight:$dark-weight;
+			color:$menu-color;
+			margin-bottom:15px;
+		}		
+		p{
+			font-weight:$light-weight;
+			line-height:24px;
+			color:$text-head;
+		}
+		.lt_connecting_option_block{
+			display:-webkit-flex;
+			display:flex;
+			flex-wrap:wrap;
+			margin-top:40px;
+			.lt_connecting_block_inner{
+				width:50%;
+				min-width:50%;
+				padding-left:25px;
+				-webkit-flex:1;
+						flex:1;
+				position:relative;
+				margin-bottom:40px;
+				i{
+					font-size:$medium-font;
+					margin-left:-25px;
+					position:absolute;
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+				  	-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}	
+				h3{
+					font-size:$medium-font;
+					font-weight:$dark-weight;
+					margin-top:0;
+					margin-bottom:10px;
+				}	
+				a, p{
+					color:$text-head;
+					display:block;
+					line-height:24px;
+				}
+				a{
+					-webkit-transition:0.3s;
+							transition:0.3s;
+					&:hover,
+					&:focus{
+						color:$primary-dark;
+					}
+				}
+				p{
+					margin:0;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/*==========| responsive contact section css |==========*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.lt_contact_section{
+		.lt_contact_form_block{
+			padding:60px 40px;
+		}
+		.lt_contact_info_block{
+			padding:25px;
+			h2{
+				margin-top:10px;
+			}
+			.lt_connecting_option_block{
+				margin-top:30px;
+				.lt_connecting_block_inner{
+					a{
+						font-size:$small-font;
+					}
+					p{
+						font-size:$small-font;
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_contact_section{
+		.col-md-7{
+			padding-right:15px;
+		}
+		.col-md-5{
+			padding-left:15px;
+		}
+		.lt_contact_info_block{
+			margin-top:30px;
+		}
+	}	
+}
+
+@media (max-width: 767px){
+	.lt_contact_section{
+		.col-md-7{
+			padding-right:15px;
+		}
+		.col-md-5{
+			padding-left:15px;
+		}
+		.lt_contact_form_block{
+			padding:25px 20px;
+			.form-group{
+				margin-bottom:0;
+				.form-control{
+					margin-bottom:10px;
+				}
+			}
+		}
+
+		.lt_contact_info_block{
+			padding:25px 20px;
+			margin-top:30px;
+			.lt_connecting_option_block{
+				.lt_connecting_block_inner{
+					min-width:100%;
+					margin-bottom:30px;
+					&:last-child{
+						margin-bottom:10px;
+					}
+				}
+			}	
+		}
+	}	
+}

@@ -1,0 +1,301 @@
+//testimonials section
+/*==========| (17). testimonials section css |==========*/
+.lt_testimonials_section{
+	position:relative;
+	background:url(../images/testimonials.jpg);
+	-webkit-background-position:center bottom;
+			background-position:center bottom;
+	-webkit-background-size:cover;
+			background-size:cover;
+
+	.lt_headings_block{
+		margin-bottom:60px;
+	}		
+
+	//testimonials carousel
+	.lt_testimonials_carousel_container{
+		position:relative;
+		z-index:2;
+		.owl-item{
+			opacity:0;
+			-webkit-transition:2s;
+					transition:2s;
+			
+			&.active{
+				opacity:1;
+				-webkit-animation-name: fadeIn;
+  						animation-name: fadeIn;
+  				-webkit-animation-duration: 2s;
+  						animation-duration: 2s;	
+  				-webkit-animation-delay: 1s;
+  						animation-delay: 1s;
+			}
+		}
+		.lt_testimonials_carousel_block{
+			text-align:center;
+			width:100%;
+			max-width:800px;
+			margin:auto;
+			.lt_testi_before_icon{
+				margin-bottom:30px;
+				i{
+					font-size:$font-full;
+					color:$white;
+				}
+			}
+			.lt_testimonial_text_block{
+				margin-bottom:30px;
+				p{
+					font-size:$big-fonts;
+					line-height:34px;
+					font-weight:$light-weight;
+					color:$white;
+					margin:0;
+				}
+			}
+			.lt_testimonial_user_info_block{
+				display:inline-block;
+				//width:100%;
+				.lt_testi_user_image{
+					width:70px;
+					height:70px;
+					border-radius:50%;
+					overflow:hidden;
+					float:left;
+					img{
+						max-width:inherit;
+						width:100%;
+					}
+				}
+				.lt_testi_userdetail_block{
+					padding-left:30px;
+					float:left;
+					text-align:left;
+					width:-webkit-calc(100% - 70px);
+					width:calc(100% - 70px);
+					h3{
+						font-size:$medium-font;
+						font-weight:$medium-weight;
+						color:$white;
+						margin-bottom:5px;
+					}
+					h5{
+						font-size:$base-font;
+						font-weight:$medium-weight;
+						color:$border-light;
+						margin:0;
+					}
+				}
+			}
+		}
+
+		.owl-controls{
+			//display:none;
+			//display:inline-block;
+			position:relative;
+			text-align:center;
+			margin-top:30px;
+			margin-bottom:-15px;
+			//left:50%;
+			//bottom:0;
+			//margin-bottom:-100px;
+			//-webkit-transform: translateX(-50%);
+					//transform: translateX(-50%);
+
+			//owl nav
+			.owl-nav{
+				display:none;
+				width:100%;
+				height:20px;
+				margin:auto;
+				position:absolute;
+				z-index:2;
+				.owl-prev{
+					font-size:0;
+					left:0;
+					top:50%;
+					margin-top:-5px;
+					margin-left:-47px;
+					position:absolute;
+					&:before{
+						font-size:$big-fonts+4;
+						color:$white;
+						content:'\f177';
+						margin-top:-10px;
+						position:absolute;
+						font-family:FontAwesome;
+
+					}
+					&:hover{
+						&:before{
+							color:$black;
+						}	
+					}
+				}
+				.owl-next{
+					font-size:0;
+					right:0;
+					top:50%;
+					margin-top:-5px;
+					margin-right:-25px;
+					position:absolute;	
+					&:before{
+						font-size:$big-fonts+4;
+						color:$white;
+						content:'\f178';
+						margin-top:-10px;
+						position:absolute;
+						font-family:FontAwesome;
+						-webkit-transition:0.3s;
+								transition:0.3s;
+					}
+					&:hover{
+						&:before{
+							color:$black;
+						}
+					}
+				}
+			}
+
+			//owl dots
+			.owl-dots{
+				//min-width:50px;
+				padding:0 25px;
+				text-align:center;
+				//border-left:2px solid $border-color;
+				//border-right:2px solid $border-color;
+				.owl-dot{
+					width:10px;
+					height:10px;
+					border-radius:50%;
+					background:$white;
+					display:inline-block;
+					margin:0 5px;
+					position: relative;
+    				z-index: 2;
+					&.active{
+						background:$black;
+					}
+				}
+			}
+		}
+	}
+
+	//overlay
+	.lt_testimonials_overlay{
+		width:100%;
+		height:100%;
+		top:0;
+		left:0;
+		position:absolute;
+		opacity:0.95;
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+	}
+}
+
+
+
+
+
+/*==========| responsive testimonials section css |==========*/
+
+@media (min-width: 992px) and (max-width: 1199px){
+	.lt_testimonials_section{
+		.lt_headings_block{
+			margin-bottom:$min-margin;
+		}
+	}	
+}
+
+
+@media (min-width: 768px) and (max-width: 991px){
+	.lt_testimonials_section{
+		.lt_headings_block{
+			margin-bottom:$tab-margin;
+		}
+	}	
+}
+
+
+@media (max-width: 767px){
+	.lt_testimonials_section{
+		.lt_headings_block{
+			margin-bottom:$mob-margin;
+		}
+
+		.lt_testimonials_carousel_container{
+			padding-bottom:0;
+			.lt_testimonials_carousel_block{
+				.lt_testi_before_icon{
+					margin-bottom:20px;
+				}
+
+				.lt_testimonial_text_block{
+					p{
+						font-size:$base-font;
+						line-height:28px;
+					}
+				}
+
+				.lt_testimonial_user_info_block{
+					min-width:200px;
+					.lt_testi_user_image{
+						width:50px;
+						height:50px;
+					}
+					.lt_testi_userdetail_block{
+						padding-left:15px;
+						width: -webkit-calc(100% - 50px);
+    					width: calc(100% - 50px);
+    					h3{
+    						margin-top:8px;
+    					}
+					}
+				}	
+			}
+			.owl-controls{
+				position:relative;
+				//display:block;
+				left:inherit;
+				margin:0 auto;
+				margin-top:30px;
+				width: 150px;
+				-webkit-transform:none;
+						transform:none;
+				.owl-dots{
+					//display:none!important;
+				}
+				.owl-nav{
+					display:none!important;	
+					width:100%;
+					display:table;
+					position:relative;
+					.owl-prev{
+						float:left;
+						top:inherit;
+						margin-left:0;
+						position:relative;
+						&::before{
+							margin-top:0;
+							position:relative;
+						}
+					}
+					.owl-next{
+						float:right;
+						top:inherit;
+						margin-right:0;
+						position:relative;
+						&:before{
+							margin-top:0;
+							position:relative;
+						}
+					}
+				}
+			}
+		}		
+	}	
+}

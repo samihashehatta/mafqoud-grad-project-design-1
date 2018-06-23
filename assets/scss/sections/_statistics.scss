@@ -1,0 +1,215 @@
+//statistics section
+/*==========| (5). statistics section  css |==========*/
+.lt_statistics_section{
+	position:relative;
+	overflow:hidden;
+	background:url(../images/statistics.jpg);
+	-webkit-background-position:center bottom;
+			background-position:center bottom;
+	-webkit-background-size:cover;
+			background-size:cover;
+	
+	//text block
+	.lt_statistics_text_block{
+		padding-right:30px;
+		position:relative;
+		z-index:0;
+		display:-webkit-flex;
+		display:flex;
+		height:310px;
+		-webkit-flex:1;
+				flex:1;	
+		.lt_static_text_inner{
+			margin:auto 0;
+			.lt_headings_block{
+				text-align:left;
+				margin-bottom:20px;
+				h1{
+					color:$white;
+				}
+				h4{
+					font-weight:$light-weight;
+					border-bottom:1px solid $white;
+					-webkit-text-fill-color: $white;
+		  					text-fill-color: $white;
+				}
+			}
+			p{
+				font-size:$medium-font;
+				line-height:24px;
+				color:#d8d8d8;
+				font-weight:$light-weight;
+			}
+			&:after{
+				content:'';
+				left:0;
+				top:0;
+				width:110%;
+				height:100%;
+				position:absolute;
+				transform-origin: bottom left;
+			    -ms-transform: skew(10deg, 0deg);
+			    -webkit-transform: skew(10deg, 0deg);
+			    		transform: skew(10deg, 0deg);
+			    z-index:-1;
+				background: $primary-dark; /* For browsers that do not support gradients */
+			    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+			    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+			    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+			}
+			&:before{
+				content:'';
+				right:100%;
+				top:0;
+				width:1000px;
+				height:100%;
+				position:absolute;
+				background: $primary-dark; /* For browsers that do not support gradients */
+			    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+			    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+			    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+			}
+		}	
+	}
+
+	//statistics block
+	.lt_theme_statistics_content{
+		display:-webkit-flex;
+		display:flex;
+		margin:0 -15px;
+		.lt_statistics_block_start{
+			height:310px;
+			padding:0 15px;
+			-webkit-flex:1;
+					flex:1;
+			display:-webkit-flex;
+			display:flex;		
+			.lt_static_block_inner{
+				margin:auto;
+				text-align:center;
+				.lt_static_icon_block{
+					i{
+						font-size:$font-heading;
+						color:$white;
+					}
+				}
+				.lt_static_number_block{
+					h2{
+						font-size:$font-heading;
+						color:$white;
+						font-weight:$dark-weight;
+						margin-bottom:10px;
+					}
+				}
+				h3{
+					font-size:$base-font;
+					margin:0;
+					color:$white;
+					font-weight:$regular-weight;
+					text-transform:uppercase;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+/*==========| responsive statistics section  css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_statistics_section{
+		.lt_statistics_text_block{
+			height:300px;
+		}
+		.lt_theme_statistics_content{
+			flex-wrap:wrap;
+			.lt_statistics_block_start{
+				min-width:50%;
+				max-width:50%;
+				height:150px;
+				.lt_static_block_inner{
+					.lt_static_icon_block{
+
+						i{
+							font-size:$font-head;
+						}
+					}
+
+					.lt_static_number_block{
+						h2{
+							font-size:$big-fonts+2;
+							margin:10px 0;
+						}
+					}	
+					h3{
+						font-size:10px;
+					}
+				}
+				&:first-child{
+					border-right:1px solid $bordertablelight;
+					border-bottom:1px solid $bordertablelight;
+				}
+				&:nth-child(2){
+					border-bottom:1px solid $bordertablelight;	
+				}
+				&:nth-child(3){
+					border-right:1px solid $bordertablelight;
+				}
+			}
+		}
+	}					
+}
+
+@media (max-width: 767px) {
+	.lt_statistics_section{
+		.lt_statistics_text_block{
+			height:auto;
+			padding-right:0;
+			.lt_static_text_inner{
+				padding:30px 0;
+				text-align:center;
+				&:after{
+					-webkit-transform:none;
+							transform:none;
+				}
+				.lt_headings_block{
+					text-align:center;
+				}
+			}
+		}
+		.lt_theme_statistics_content{
+			flex-wrap:wrap;
+			.lt_statistics_block_start{
+				min-width:50%;
+				max-width:50%;
+				height:auto;
+				padding:30px 15px;
+				.lt_static_block_inner{
+					.lt_static_number_block{
+						h2{
+							margin-top:10px;
+						}
+					}
+					h3{
+						font-size:$small-font;
+					}
+				}
+				&:first-child{
+					border-right:1px solid rgba(111, 72, 170, 0.4);
+					border-bottom:1px solid rgba(111, 72, 170, 0.4);
+				}
+				&:nth-child(2){
+					border-bottom:1px solid rgba(111, 72, 170, 0.4);	
+				}
+				&:nth-child(3){
+					border-right:1px solid rgba(111, 72, 170, 0.4);
+				}
+			}
+		}
+	}
+}

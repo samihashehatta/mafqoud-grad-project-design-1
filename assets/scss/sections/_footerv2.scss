@@ -1,0 +1,314 @@
+//footer section
+/*==========| (21). footer section css |==========*/
+.lt_footer_sectionv2{
+	position:relative;
+	background:$primary-light;
+	.lt_ftitle{
+		padding-bottom:15px;
+		h3{
+			font-size:16px;
+			color:#fff;
+			font-weight:500;
+			text-transform:uppercase;
+			margin:0;
+			padding-bottom:10px;
+			position:relative;
+			display:inline-block;
+			&:after{
+				content:'';
+				width:100%;
+				height:3px;
+				left:0;
+				bottom:0;
+				background:$primary-dark;
+				position:absolute;
+			}
+		}
+	}
+	.lt_inner_footer_upper{
+		padding-bottom:70px;
+
+		//footer info block
+		.lt_footer_info_block{
+			padding-right:20px;
+			h2{
+				font-size:24px;
+				color:#fff;
+				font-weight:$dark-weight;
+				text-transform:uppercase;
+				margin-top:0;
+				margin-bottom:15px;
+			}
+			p{
+				font-size:$base-font;
+				color:$white;
+				font-weight:$light-weight;
+				line-height:26px;
+			}
+		}
+
+		//footer social block
+		.footer_social{
+			padding-top:15px;
+			ul{
+				padding:0;
+				margin:0;
+				display:inline-block;
+				li{
+					margin-right:20px;
+					display:inline-block;
+					a{	
+						font-size:$big-fonts;
+						color:$white;
+						-webkit-transition:0.3s;
+								transition:0.3s;
+						&:hover,
+						&:focus{
+							color:$primary-hoverdark;
+						}		
+					}
+				}
+			}
+		}
+
+		//instagram
+		.lt_footer_insta_box{
+			ul{
+				padding:0;
+				margin:0 -5px;
+				position:relative;
+				&:after{
+					content:'';
+					display:table;
+					clear:both;
+				}
+				li{
+					width:25%;
+					float:left;
+					padding:5px;
+					list-style:none;
+					-webkit-transition:0.5s;
+							transition:0.5s;
+					img{
+						width:100%;
+					}
+					&:hover{
+						opacity:0.6;
+					}
+				}
+			}
+		}
+	}
+
+	
+    //footer menu block
+    .lt_footer_menu_block{
+    	position:relative;
+    	.lt_footer_menu{
+    		ul{
+    			padding:0;
+    			margin:0;
+    			position:relative;
+    			&:after{
+    				content:'';
+    				display:table;
+    				clear:both;
+    			}
+    			li{
+    				display:block;
+    				float:left;
+    				width:50%;
+    				a{
+    					font-size:$base-font;
+    					color:$white;
+    					line-height:34px;
+    					position:relative;
+    					display:inline-block;
+    					&:after{
+    						content:'';
+    						height:1px;
+    						width:0;
+    						left:0;
+    						bottom:0;
+    						margin-bottom:4px;
+    						background:$white;
+    						position:absolute;
+    						-webkit-transition:0.3s;
+    								transition:0.3s;
+    					}		
+    					&:hover,
+    					&:focus{
+    						//color:$primary-hoverdark;
+    						&:after{
+    							width:100%;
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    //copyright and footer content
+    .lt_copyright_block{
+    	position:absolute;
+    	left:0;
+    	bottom:0;
+    	width:100%;
+    	margin-bottom:35px;
+    	background:$primary-dark;
+    	z-index:2;
+    	.lt_copy_title{
+    		width:100%;
+    		overflow:hidden;
+			position:relative;
+			text-align:center;
+			h3{
+				font-size:$base-font;
+				font-weight:$regular-weight;
+				color:$bg-light;
+				margin:0;
+				padding:15px 0;
+				position:relative;
+				display:inline-block;
+			}
+		}
+
+		//footer text content
+		.lt_footer_text_block{
+			text-align:center;
+			margin-bottom:$tab-margin;
+			p{
+				font-size:$base-font;
+				color:$border-color;
+				line-height:24px;
+			}
+		}
+
+		
+    }
+    .scrollToTop{
+		font-size:$font-head;
+		color:$white;
+		right:0;
+		bottom:0;
+		margin-bottom:6px;
+		margin-right:60px;
+		position:absolute;
+		z-index:5;	
+	}
+}
+
+
+
+
+
+
+
+
+/*==========| responsive footer section css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_footer_sectionv2{
+		.lt_inner_footer_upper{
+			padding-bottom:30px;
+			.lt_footer_info_block{
+				padding-right: 0px;
+			    border-bottom: 1px solid $primary-dark;
+			    padding-bottom: 20px;
+			    margin-bottom:20px;
+				h2{
+					font-size:$big-fonts;
+					margin-bottom:10px;
+				}
+				p{
+					font-size:$small-font;
+					line-height:20px;
+					margin:0;
+				}
+			}
+		}		
+		.lt_footer_menu_block{
+			.lt_footer_menu {	
+				ul{
+					li{
+						a{
+							font-size:11px;
+						}
+					}
+				}
+			}	
+		}
+
+		.lt_copyright_block{
+			margin-bottom:20px;
+			.lt_footer_text_block{
+				margin-bottom:30px;
+			}
+			.lt_copy_title{
+				margin-bottom:0px;
+				h3{
+					font-size:11px;
+				}
+			}
+		}
+		#scrollToTop{
+		    display: block;
+		    
+		}	
+	}	
+}
+
+
+@media (max-width: 767px){
+	.lt_footer_sectionv2{
+		padding-bottom:0;
+		text-align:center;
+		.lt_inner_footer_upper{
+			padding-bottom:30px;
+			.lt_footer_info_block{
+				padding-right: 0px;
+				text-align:center;
+			    border-bottom: 1px solid $primary-dark;
+			    padding-bottom: 20px;
+			    margin-bottom:20px;
+				h2{
+					font-size:$big-fonts;
+					margin-bottom:10px;
+				}
+				p{
+					font-size:$small-font;
+					line-height:20px;
+					margin:0;
+				}
+			}
+		}		
+		.lt_footer_menu_block{
+			display:none;
+		}
+
+		.lt_copyright_block{
+			position:relative;
+			margin-bottom:0;
+			.lt_footer_text_block{
+				margin-bottom:30px;
+			}
+			.lt_copy_title{
+				margin-bottom:0px;
+				h3{
+					font-size:12px;
+					line-height:20px;
+					padding:20px 0 15px;
+				}
+			}
+		}
+		.scrollToTop{
+			position: relative;
+		    display: block;
+		    width:40px;
+		    text-align:center;
+		    margin:0px auto;
+		    padding-bottom:20px;
+		}	
+	}		
+}

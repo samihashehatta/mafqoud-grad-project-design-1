@@ -1,0 +1,165 @@
+//about section style in scss formate
+/*==========| (3). about section  css |==========*/
+.lt_about_section{
+	background:$bg-light;
+	.lt_headings_block{
+		margin-bottom:60px;
+	}
+	//about section blocks
+	.lt_about_section_blocks{
+		.lt_about_block_inner{
+			position:relative;
+			text-align:center;
+			padding:40px 20px;
+			z-index:2;
+			.lt_about_icon_block{
+				padding-bottom:30px;
+				i{	
+					font-size:$font-full;
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+				  	-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				  	-webkit-transition:0.8s;
+				  			transition:0.8s;		
+				}
+			}
+			.lt_about_content_block{
+				h4{
+					font-size:$medium-font;
+					margin-top:0;
+					margin-bottom:25px;
+					color:$text-head;
+					text-transform:uppercase;
+					-webkit-transition:0.8s;
+				  			transition:0.8s;
+				}
+				p{
+					font-size:$base-font;
+					line-height:22px;
+					font-weight:$light-weight;
+					color:$text-color;
+					margin-bottom:0;
+					-webkit-transition:0.8s;
+				  			transition:0.8s;
+				}
+			}
+			&:after{
+				content:'';
+				width:100%;
+				height:0%;
+				left:0;
+				top:0;
+				z-index:-1;
+				position:absolute;
+				-webkit-transition:0.6s;
+						transition:0.6s;
+			}
+			&:hover,
+			&:focus{
+				&:after{
+					height:100%;
+					background: $primary-dark; /* For browsers that do not support gradients */
+				    -webkit-box-shadow:0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+				    		box-shadow:0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+				}
+				.lt_about_icon_block{
+					i{
+						-webkit-animation-name: shake;
+          						animation-name: shake;
+          				-webkit-animation-duration: 1s;
+          						animation-duration: 1s;		
+						-webkit-text-fill-color: $white;
+				  				text-fill-color: $white;
+					}
+				}
+				.lt_about_content_block{
+					h4{
+						color:$white;
+					}
+					p{
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+} 
+
+
+
+
+/*==========| responsive about section  css |==========*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lt_about_section{
+		.lt_about_section_blocks{
+			.lt_about_block_inner{
+				padding:$padding-max;
+			}
+		}
+	}		
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_about_section{
+		.lt_about_section_blocks{
+			.lt_about_block_inner{
+				padding:15px $padding;
+				.lt_about_icon_block{
+					padding-bottom:15px;
+				}
+				.lt_about_content_block{
+					h4{
+						font-size:$base-font;
+						margin-bottom:15px;
+					}
+					p{
+						margin-bottom:$margin-max;
+					}
+				}
+			}
+		}
+	}		
+}
+
+
+//responsive style for header
+@media (max-width: 767px) {
+	.lt_flex_grid{
+		flex-wrap:wrap;
+		.lt_flex_cell{
+			max-width:50%;
+			min-width:50%;
+		}
+	}
+
+	.lt_about_section{
+		.lt_about_section_blocks{
+			.lt_about_block_inner{
+				padding:$padding-max 5px;
+				.lt_about_icon_block{
+					padding-bottom:$padding-max;
+					i{
+						font-size:$big-fonts+2;
+					}
+				}
+				.lt_about_content_block{
+					h4{
+						font-size:12px;
+						margin-bottom:15px;
+					}
+					p{
+						font-size:$small-font;
+						line-height:20px;
+					}
+				}
+			}
+		}
+		.lt_headings_block{
+			margin-bottom:30px;
+		}
+	}  
+}	

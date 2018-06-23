@@ -1,0 +1,55 @@
+//brands logo section
+/*==========| (12). brands logo section css |==========*/
+.lt_brand_logos_section{
+	padding:$min-padding 0;
+	background:$bg-light;
+	display:-webkit-flex;
+	display:flex;
+	.lt_brands_logo_block{
+		padding:0 $padding-max;
+		text-align:center;
+		-webkit-flex:1;
+				flex:1;
+		img{
+			opacity:0.6;
+		}		
+		&:hover,
+		&:focus{
+			img{
+				opacity:1;
+			}
+		}
+	}
+}
+
+
+
+
+
+/*==========| responsive brands logo section css |==========*/
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.lt_brand_logos_section{
+		padding:$tab-padding 0;
+	}
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_brand_logos_section{
+		padding:$mob-padding 0;
+	}
+}
+
+
+@media (max-width: 767px){
+	.lt_brand_logos_section{
+		padding:30px 0;
+		flex-wrap:wrap;
+		.lt_brands_logo_block{
+			min-width:33.3333%;
+			max-width:33.3333%;
+			padding:15px;
+		}
+	}	
+}

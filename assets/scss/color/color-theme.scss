@@ -1,0 +1,1756 @@
+@import "purple-theme";
+//@import "red-theme";
+
+/*==========| typography scss |==========*/
+body{
+	color:$text-color;
+}
+a:hover,
+a:focus{
+	color:$primary-dark;
+}
+//buttons style
+.lt_btn{
+	color:$white;
+	&.lt_btnwhite{
+		span{
+			background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+			background:linear-gradient($primary-dark,$primary-lighttext);
+		  	-webkit-background-clip: text;
+		  			background-clip: text;
+		  	-webkit-text-fill-color: transparent;
+		  			text-fill-color: transparent;
+		}
+		&:before{
+			border:2px solid $white;
+		}
+		&:after{
+			background:$white;
+		}
+		&:hover,
+		&:focus{
+			&:after{
+			}
+			span{
+			  	-webkit-text-fill-color: $white;
+			  			text-fill-color: $white;
+			}
+		}
+	}
+	&.lt_inverse{
+		color:$white;
+		border:2px solid $white;
+		background:transparent;
+		&:hover,
+		&:focus{
+			background:$white;
+			span{
+			  	background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+				background:linear-gradient($primary-dark,$primary-lighttext);
+			  	-webkit-background-clip: text;
+			  			background-clip: text;
+			  	-webkit-text-fill-color: transparent;
+			  			text-fill-color: transparent;
+			}
+		}
+	}
+
+
+	&.lt_btnwhitev2{
+		span{
+			color:$white;
+		}
+		&:before{
+			border:2px solid $primary-dark;
+		}
+		&:after{
+			background:$primary-dark;
+		}
+		&:hover,
+		&:focus{
+			span{
+			  	-webkit-text-fill-color: $primary-dark;
+			  			text-fill-color: $primary-dark;
+			}
+		}
+	}
+	&.lt_inversev2{
+		color:$primary-dark;
+		border:2px solid $primary-dark;
+		background:transparent;
+		&:hover,
+		&:focus{
+			background:$primary-dark;
+			span{
+			  	color:$white;;
+			}
+		}
+	}
+
+	&.lt_btn_primay{
+		background-image: $primary-dark; /* For browsers that do not support gradients */
+	    background-image: -webkit-linear-gradient(to right, $primary-dark 0%, $primary-hoverlight 51%, $primary-light 100%);
+	    background-image: -o-linear-gradient(to right, $primary-dark 0%, $primary-hoverlight 51%, $primary-light 100%);
+	    background-image: -moz-linear-gradient(to right, $primary-dark 0%, $primary-hoverlight 51%, $primary-light 100%);
+	    background-image: linear-gradient(to right, $primary-dark 0%, $primary-hoverlight 51%, $primary-light 100%);
+	    &:hover,
+	    &:focus{
+	    	color:$white;
+	    }
+	}
+}
+
+blockquote{
+	border-left: 5px solid $primary-dark;
+    background: $themevlight;
+    color: $primary-dark;
+}
+
+//headings
+.lt_headings_block{
+	h1{
+		color:#2a2a2a;
+	}
+	h4{
+		border-bottom:1px solid $primary-lighttext;
+		background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+		background:linear-gradient($primary-dark,$primary-lighttext);
+	  	-webkit-background-clip: text;
+	  			background-clip: text;
+	  	-webkit-text-fill-color: transparent;
+	  			text-fill-color: transparent;
+	}
+	p{
+		color:$text-color;
+	}
+	&.inverse{
+		h1{
+			color:$white;
+		}
+		h4{
+			border-bottom:1px solid $white;
+			-webkit-text-fill-color: $white;
+	  				text-fill-color: $white;
+		}
+		p{
+			color:$white;
+		}
+	}
+}
+
+/*==========| (1). Header Section  css |==========*/
+.lt_header_section{
+
+    &.lt_home_header{
+	    .lt_top_header{
+	    	background:transparent;
+	    }
+
+	    // navigation container
+		.lt_navigation_container{
+
+			// navigation block
+			.lt_navigation_block{
+				&:after{
+					content:'';
+					background:$primary-light;
+				}
+				&:before{
+					background:$primary-light;
+				}
+			}
+		}		
+    }
+	//top header
+	.lt_top_header{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(to right , $primary-light, $primary-dark); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(to right , $primary-light, $primary-dark); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(to right , $primary-light, $primary-dark); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right , $primary-light, $primary-dark); /* Standard syntax */
+
+		//contact info
+		.lt_top_contact_info{
+			ul{
+				li{
+					a{
+						color:$white;
+						&:after{
+							background:$white;
+						}
+					}	
+				}
+			}
+		}
+
+		//social links
+		.lt_top_social_links{
+			text-align:right;
+			ul{
+				li{
+					a{
+						color:$white;
+						&:hover,
+						&:focus{
+							color:$primary-hoverdark;
+						}		
+					}	
+				}
+			}
+		}
+	}	
+
+	// navigation container
+	.lt_navigation_container{
+
+		// navigation block
+		.lt_navigation_block{
+			background:$white;
+		
+			//logo block
+			.lt_logo_block{
+				span{
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+					-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}
+			}
+
+			//menu block
+			.lt_menu_block{
+				padding:0;
+				.lt_menu{
+					ul{
+						li{
+							a{
+								&:after{		
+									background: $primary-dark; /* For browsers that do not support gradients */
+								    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+								    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+								    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+								    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+								}		
+								&:hover,
+								&:focus,
+								&.active{
+									color:$white;
+								}		
+
+							}
+							&:hover{
+								a{
+									color:$white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//fixed menu
+    &.fixed_menu{
+    	.lt_navigation_container{
+    		background:$white;
+    	}
+    }
+
+}
+#lt_menu #lt_menu_hover .lt_hover_inner {
+	background: $primary-dark;
+	background: -webkit-linear-gradient($primary-dark, $primary-light);
+	background: -o-linear-gradient($primary-dark, $primary-light);
+	background: -moz-linear-gradient($primary-dark, $primary-light);
+	background: linear-gradient($primary-dark, $primary-light);
+}
+
+
+/*==========| responsive header section css ==========*/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_header_section{
+		.lt_navigation_container{
+			background:$white;
+		}
+	}			
+}
+
+@media (max-width: 767px) {
+	.lt_header_section{
+		.lt_navigation_container{
+			background:$white;
+			.lt_navigation_block{
+				.lt_mobile_menu_toggle{
+					button{
+						background:transparent;
+						span{
+							background: $primary-dark;
+							background: -webkit-linear-gradient($primary-dark, $primary-light);
+							background: -o-linear-gradient($primary-dark, $primary-light);
+							background: -moz-linear-gradient($primary-dark, $primary-light);
+							background: linear-gradient($primary-dark, $primary-light);
+						}
+					}
+				}
+				.lt_menu_block{
+					.lt_menu{
+						ul{
+							li{
+								a{
+									border-bottom:1px solid #f0f0f0;
+									&:hover,
+									&:focus,
+									&.active{
+										color:$primary-dark;
+										background:transparent;
+										border-bottom:1px solid $primary-dark;
+									}
+								}
+							}
+						}
+					}	
+				}	
+			}
+		}
+	}
+}
+
+/*==========| (1.2). Header Section  css |==========*/
+.lt_header_sectionv2{
+	//top header
+	.lt_top_header{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient(to right, $primary-light, $primary-dark); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient(to right, $primary-light, $primary-dark); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient(to right, $primary-light, $primary-dark); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient(to right, $primary-light, $primary-dark); /* Standard syntax */
+
+		//contact info
+		.lt_top_contact_info{
+			ul{
+				li{
+					a{
+						color:$white;
+						&:after{
+							background:$white;
+						}
+					}	
+				}
+			}
+		}
+
+		//social links
+		.lt_top_social_links{
+			ul{
+				li{
+					a{
+						color:$white;
+						&:hover,
+						&:focus{
+							color:$primary-hoverdark;
+						}		
+					}	
+				}
+			}
+		}
+	}	
+
+	// navigation container
+	.lt_navigation_container{
+		background:$white;
+
+		// navigation block
+		.lt_navigation_block{
+			
+			//logo block
+			.lt_logo_block{
+				span{
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+				  	-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}
+			}
+
+			//menu block
+			.lt_menu_block{
+				.lt_menu{
+					ul{
+
+						li{
+							a{
+								color:$menu-color;
+								&:after{
+									background: $primary-dark; /* For browsers that do not support gradients */
+								    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+								    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+								    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+								    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+								}		
+								&:hover,
+								&:focus,
+								&.active{
+									color:$white;
+								}		
+
+							}
+							&:hover{
+								a{
+									color:$white;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	//fixed menu
+    &.fixed_menu{
+    	.lt_navigation_container{
+    		background:$white;
+    	}
+    }
+
+}
+
+/*==========| responsive header section css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_header_sectionv2{
+		.lt_navigation_container{
+			background:$white;
+		}
+	}			
+}
+
+@media (max-width: 767px) {
+	.lt_header_sectionv2{
+		.lt_navigation_container{
+			background:$white;
+			.lt_navigation_block{
+				.lt_mobile_menu_toggle{
+					button{
+						background:transparent;
+						span{
+							background: $primary-dark;
+							background: -webkit-linear-gradient($primary-dark, $primary-light);
+							background: -o-linear-gradient($primary-dark, $primary-light);
+							background: -moz-linear-gradient($primary-dark, $primary-light);
+							background: linear-gradient($primary-dark, $primary-light);
+						}
+					}
+				}
+				.lt_menu_block{
+					.lt_menu{
+						ul{
+							li{
+								a{
+									border-bottom:1px solid #f0f0f0;
+									&:hover,
+									&:focus,
+									&.active{
+										color:$primary-dark;
+										background:transparent;
+										border-bottom:1px solid $primary-dark;
+									}
+								}
+							}
+						}
+					}	
+				}	
+			}
+		}
+	}
+
+}
+
+/*==========| (2). Banner section css |==========*/
+.lt_banner_section{
+	background-color:$primary-dark;
+	//overlay block
+	.lt_header_overlay{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+	}
+	.lt_header_text_content{
+		.lt_header_text_content_inner{
+			h1{
+				color:$white;
+			}
+			p{
+				color:$white;
+			}
+		}
+	}
+}
+
+/*==========| (2.2). Banner section version 2 css |==========*/
+.lt_banner_sectionv2{
+
+	.lt_header_banner{
+		.owl-controls{
+			.owl-nav{
+				.owl-prev{
+					color:$white;					
+				}
+				.owl-next{
+					color:$white;
+					background:$text-head;	
+				}
+			}
+		}
+	}
+
+	.lt_header_text_content{
+		.lt_header_text_content_inner{
+			h1{
+				color:$text-dark;
+			}
+			p{
+				color:$text-color;
+			}
+		}
+	}
+}
+
+
+/*==========| (3). about section  css |==========*/
+.lt_about_section{
+	background:$bg-light;
+	//about section blocks
+	.lt_about_section_blocks{
+		.lt_about_block_inner{
+			.lt_about_icon_block{
+				i{	
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+					-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}
+			}
+			.lt_about_content_block{
+				p{
+					color:$text-color;
+				}
+			}
+			&:hover,
+			&:focus{
+				&:after{
+					background: $primary-dark; /* For browsers that do not support gradients */
+				}
+				.lt_about_icon_block{
+					i{	
+						-webkit-text-fill-color: $white;
+				  				text-fill-color: $white;
+					}
+				}
+				.lt_about_content_block{
+					h4{
+						color:$white;
+					}
+					p{
+						color:$white;
+					}
+				}
+			}
+		}
+	}
+} 
+
+/*==========| (4). know osmthing section  css |==========*/
+
+/*==========| (5). statistics section  css |==========*/
+.lt_statistics_section{
+	
+	//text block
+	.lt_statistics_text_block{
+		.lt_static_text_inner{
+			.lt_headings_block{
+				h1{
+					color:$white;
+				}
+				h4{
+					border-bottom:1px solid $white;
+					-webkit-text-fill-color: $white;
+		  					text-fill-color: $white;
+				}
+			}
+			p{
+				color:$border-color;
+			}
+			&:after{
+				background: $primary-dark; /* For browsers that do not support gradients */
+			    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+			    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+			    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+			}
+			&:before{
+				background: $primary-dark; /* For browsers that do not support gradients */
+			    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+			    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+			    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+			}
+		}	
+	}
+	//statistics block
+	.lt_theme_statistics_content{
+		.lt_statistics_block_start{	
+			.lt_static_block_inner{
+				.lt_static_icon_block{
+					i{
+						color:$white;
+					}
+				}
+				.lt_static_number_block{
+					h2{
+						color:$white;
+					}
+				}
+				h3{
+					color:$white;
+				}
+			}
+		}
+	}
+}	
+
+
+/*==========| responsive statistics section  css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_statistics_section{
+		.lt_theme_statistics_content{
+			.lt_statistics_block_start{
+				&:first-child{
+					border-right:1px solid $bordertablelight;
+					border-bottom:1px solid $bordertablelight;
+				}
+				&:nth-child(2){
+					border-bottom:1px solid $bordertablelight;	
+				}
+				&:nth-child(3){
+					border-right:1px solid $bordertablelight;
+				}
+			}
+		}
+	}					
+}
+
+@media (max-width: 767px) {
+	.lt_statistics_section{
+		.lt_theme_statistics_content{
+			.lt_statistics_block_start{
+				&:first-child{
+					border-right:1px solid $bordertablelight;
+					border-bottom:1px solid $bordertablelight;
+				}
+				&:nth-child(2){
+					border-bottom:1px solid $bordertablelight;	
+				}
+				&:nth-child(3){
+					border-right:1px solid $bordertablelight;
+				}
+			}
+		}
+	}
+}
+
+
+/*==========| (6). simple steps section  css |==========*/
+.lt_simple_steps_section{
+	background:$bg-light;	
+	.lt_simple_steps_tabs_block{
+
+		//tabs list
+		.lt_tablist{
+			border-bottom:4px solid $border-light;
+			li{
+				a{
+					color:$text-head;
+					.lt_step_icon_block{
+						background:$white;
+						border:4px solid $border-light;		
+						i{
+					    	color:$white;
+						}
+					}
+				}
+				&:hover,
+				&:focus,
+				&.active{
+					a{
+						color:$primary-dark;
+						.lt_step_icon_block{
+							background: $primary-dark; /* For browsers that do not support gradients */
+						    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+						    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+						    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+						    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+						    i{
+					    		-webkit-text-fill-color: $white;
+					  					text-fill-color: $white;
+						    }
+						    
+						}
+						.lt_steps{
+							color:$primary-dark;
+							span{
+								color:$primary-dark!important;
+							}
+						}
+					}				
+				}
+				&.active{
+					a{
+						color:$primary-dark;
+					}
+				}		
+			}
+		}
+
+
+		.lt_tabcontent_block{
+			.tab-content{
+				.tab-pane{
+					border:1px solid $border-color;
+					.lt_tab_inner_title{
+						h3{
+							color:$menu-color;
+							background:$bg-light;
+						}
+					}
+					p{
+						color:$text-color;
+					}
+				}
+			}
+			&:before{
+				background:$border-color;
+			}
+		}
+	}
+}
+
+
+@media (max-width: 767px){
+	.lt_simple_steps_section{
+		.nrml_accor_design .panel-default{
+		  border-color: $border-light;
+		}
+		.nrml_accor_design .panel-title a:after{
+		  color: $primary-dark;
+		}
+	}
+}
+
+
+
+
+/*==========| (7). checkout section  css |==========*/
+.lt_checkout_section{
+
+	//features row
+	.lt_checkout_features_container{
+		.lt_chackout_features_row{
+			background: $primary-dark; /* For browsers that do not support gradients */
+		    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+		    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+		    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+		    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+		    .lt_checkout_features_content_block{
+			    &.lt_checkout_feature_grid{	
+			    	ul{
+			    		li{
+			    			.lt_checkout_list_inner{
+			    				text-align:center;
+			    				span{
+			    					color:$primaryinverse;
+			    				}
+			    				h4{
+			    					color:$white;
+			    				}
+			    				p{
+			    					color:$border-light;
+			    				}
+			    			}
+			    		}
+			    	}
+			    }	
+			    &.lt_checkout_feature_list{
+			    	ul{
+			    		li{
+			    			.lt_checkout_list_inner{
+			    				span{
+			    					background:$white;	
+			    					i{
+			    						background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+										background:linear-gradient($primary-dark,$primary-lighttext);
+										-webkit-background-clip: text;
+							  			background-clip: text;
+									  	-webkit-text-fill-color: transparent;
+									  			text-fill-color: transparent;
+			    					}
+			    				}
+			    				h4{
+			    					color:$white;
+			    				}
+			    				p{
+			    					color:$border-light;
+			    				}
+			    			}
+			    		}
+			    	}
+			    }
+		    }
+		}    
+	}
+}
+
+
+
+
+/*==========| responsive checkout section  css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_checkout_section{
+		.lt_checkout_features_container{
+			.lt_chackout_features_row{
+				.lt_checkout_features_content_block{
+					&.lt_checkout_feature_grid{
+						ul{
+							li{
+								padding:15px;
+								&:first-child{
+									border-right:1px solid $primary-light;
+									border-bottom:1px solid $primary-light;
+								}
+								&:nth-child(2){
+									border-bottom:1px solid $primary-light;
+								}
+								&:nth-child(3){
+									border-right:1px solid $primary-light;
+								}	
+							}
+						}
+					}		
+				}
+			}
+		}		
+	}	
+}
+
+@media (max-width: 767px){
+	.lt_checkout_section{
+		.lt_checkout_features_container{
+			.lt_chackout_features_row{
+
+				.lt_checkout_features_content_block{
+					padding:0;
+					&.lt_checkout_feature_grid{
+						ul{
+							li{
+								&:first-child{
+									border-right:1px solid $primary-light;
+									border-bottom:1px solid $primary-light;
+								}
+								&:nth-child(2){
+									border-bottom:1px solid $primary-light;
+								}
+								&:nth-child(3){
+									border-right:1px solid $primary-light;
+								}
+							}
+						}
+					}
+				}
+			}
+		}		
+	}	
+}
+
+
+/*==========| (8). service Section css |==========*/
+.lt_servisec_section{
+	background:$bg-light;
+	.lt_services_blocks_container{
+		.lt_services_block{
+			.lt_services_block_inner{
+				background:$white;
+				span{
+					i{
+						background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+						background:linear-gradient($primary-dark,$primary-lighttext);
+						-webkit-background-clip: text;
+				  			background-clip: text;
+					  	-webkit-text-fill-color: transparent;
+					  			text-fill-color: transparent;
+					}
+				}
+				h4{
+					color:$text-dark;
+				}
+				p{
+					color:$text-color;
+				}
+			}		
+		}
+	}
+}
+
+
+
+/*==========| (9). parallax section css after service section |==========*/
+.lt_after_services_parallax_section{
+	
+	.lt_after_services_parallax_overlay{
+		background:rgba(0,0,0,0.7);
+	}
+	h3{
+		color:$white;
+	}
+	
+}
+
+
+
+/*==========| (10). team section css |==========*/
+.lt_team_section{
+	//team carousel
+	.lt_team_carousel{
+		.lt_team_slider_outer{
+			.lt_team_slider{
+				&.owl-carousel{
+					.owl-stage-outer{
+						.owl-item{
+							.lt_team_item{
+								background:$primary-dark;
+								.lt_team_img_overlay{
+									background:$primary-dark;
+								}
+							}
+						}
+					}
+					.owl-nav{
+						.owl-prev{
+							&:before{
+								color:$text-color;
+							}
+							&:hover{
+								&:before{
+									color:$primary-dark;
+								}	
+							}
+						}
+						.owl-next{
+							&:before{
+								color:$text-color;
+							}
+							&:hover{
+								&:before{
+									color:$primary-dark;
+								}
+							}
+						}
+						&:before{
+							background:$border-color;
+						}
+					}
+				}
+			}
+		}
+	}	
+
+	//team details container
+	.lt_team_details_container{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+	    .lt_team_member_detail_block{
+	    	h3{
+	    		color:$white;
+	    	}
+	    	h5{
+	    		color:$white;
+	    	}
+	    	p{
+	    		color:$border-light;
+	    	}
+	    	.lt_team_detail_social_block{
+	    		ul{
+	    			li{
+	    				a{
+	    					color:$white;
+	    				}
+	    			}
+	    		}
+	    	}
+	    }
+	}	
+}
+
+
+/*==========| (11). portfolio section css |==========*/
+.lt_portfolio_section{
+
+	//portfolio content container
+	.lt_portfolio_content_container{
+		.lt_portfolio_list{
+			ul{
+				li{
+					a{
+						color:$text-head;
+						&:hover,
+						&:focus,
+						&.active{
+							color:$white;
+							background: $primary-dark; /* For browsers that do not support gradients */
+						    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+						    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+						    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+						    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+						}		
+					}
+				}
+			}
+		}
+		.lt_protfolio_content_blocks{
+			.lt_portfolio_content_block_outer{
+				background:$text-dark;
+				.lt_portfolio_block{
+					.lt_portfolio_block_inner{
+						.lt_portfolio_image_block{
+							.lt_portfolio_hover_block{
+								background:$primaryoverlay;
+								.lt_portfolio_hover_inner{
+									h2{
+										color:$white;
+									}
+									p{
+										color:$white;
+									}
+									.lt_portfolio_hover_link_block{
+										a{
+											color:$white;
+											i{
+												color:$white;
+											}
+										}
+									}
+								}		
+							}
+						}	
+					}		
+				}
+			}
+		}	
+	}
+}
+
+
+
+/*==========| responsive portfolio section css |==========*/
+
+@media (max-width: 767px){
+	.lt_portfolio_section{
+		.lt_headings_block{
+			margin-bottom:40px;
+		}
+
+		.lt_portfolio_content_container{
+			.lt_portfolio_list{
+				ul{
+					background:rgba(255,255,255,0.9);
+					li{
+						a{
+							color:$text-head;
+							&:hover,
+							&:focus,
+							&.active{
+								color:$primary-dark;
+								background:none;
+							}
+						}
+					}
+				}
+				.lt_mobview_portfolio_nav{
+					background:$white;
+					border-bottom:1px solid $primary-dark;
+					span{
+						color:$primary-dark;
+					}	
+					&:after{
+						border-right:1px solid $primary-dark;
+						border-bottom:1px solid $primary-dark;
+					}
+				}
+			}	
+		}			
+	}	
+}
+
+
+
+
+
+/*==========| (12). brands logo section css |==========*/
+.lt_brand_logos_section{
+	background:$bg-light;
+}
+
+
+
+/*==========| (13). work progress section css |==========*/
+.lt_work_progress_section{
+
+	//video block
+	.lt_workprogress_video{
+		.lt_video_overlay{
+			.lt_video_overlay_inner{
+				i{
+					color:$primary-dark;
+				    background: $white;
+				}
+				h3{
+					color:$white;
+				}
+			}
+		}
+	}
+	 //progress bars
+	 .lt_workprogress_bars_container{
+	 	.lt_workpregress_row{
+	 		.lt_workprogress_loader{
+	 			background:$border-color;
+	 			.lt_wp_loader_inner{
+	 				background:$primary-dark;
+	 			}
+	 		}
+	 	}
+	 }
+}
+
+
+/*==========| (14). align parallax section css |==========*/
+.lt_text_align_parallax_section{
+	.lt_textalign_parallax_overlay{
+		background:rgba(0,0,0,0.7);
+	}	
+	.lt_text_align_parallax_content_outer{
+		.lt_text_align_parallax_inner{
+			.lt_textalign_parallax_text{
+				h1{
+					color:$white;
+				}	
+				p{
+					color:$white;
+				}	
+			}
+		}
+	}		
+}
+
+
+
+/*==========| (15). price tables section css |==========*/
+.lt_price_table_section{
+	background:$bg-light;
+	.lt_pricing_table_block{
+		background:$white;
+		.lt_pricetable_title_block{
+			.lt_pricetable_title_inner{
+				h1{
+					color:$white;
+				}
+				h5{
+					color:$white;
+				}
+			}
+			.lt_pricetable_title_overlay{
+				background: $primary-dark; /* For browsers that do not support gradients */
+			    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+			    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+			    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+			    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+			}
+		}
+		.lt_pricetable_content{
+			.lt_pt_list{	
+				ul{
+					li{
+						color:$menu-color;
+						&:before{
+						    color: $green;
+						}
+						&.lt_not_allowed{
+							&:before{
+								color:$red;
+							}
+						}
+					}
+				}
+				&:after{
+					background: $primary-dark; /* For browsers that do not support gradients */    
+					background: -webkit-radial-gradient($primary-dark, $white, $white); /* Safari 5.1 to 6.0 */
+					background: -o-radial-gradient($primary-dark, $white, $white); /* For Opera 11.6 to 12.0 */
+					background: -moz-radial-gradient($primary-dark, $white, $white); /* For Firefox 3.6 to 15 */
+					background: radial-gradient($primary-dark, $white, $white); /* Standard syntax (must be last) */
+				}
+			}	
+		}	
+	}	
+}
+
+
+
+
+/*==========| (16). blog section css |==========*/
+.lt_latest_blog_section{
+	.lt_blog_carousel_container{
+		.lt_blog_item{
+			.lt_blog_image_block{
+				.lt_blog_date_block{
+					background: $primary-dark; /* For browsers that do not support gradients */
+				    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+				    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+				    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+				    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+				    span{
+				    	color:$white;
+				    }	
+				}
+			}
+			.lt_blog_content_block{
+				.lt_blog_title_block{
+					a{
+						color:$menu-color;
+					}
+				}
+				p{
+					color:$text-head;
+				}
+				.lt_blog_readmore_btn{
+					a{
+						color:$primary-dark;
+						&:after{
+							background: $primary-dark; /* For browsers that do not support gradients */
+						    background: -webkit-linear-gradient(left, $primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+						    background: -o-linear-gradient(right, $primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+						    background: -moz-linear-gradient(right, $primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+						    background: linear-gradient(right, $primary-dark, $primary-light); /* Standard syntax */
+						}
+					}
+				}
+			}
+		}
+		.owl-controls{
+
+			//owl nav
+			.owl-nav{
+				.owl-prev{
+					&:before{
+						color:$text-head;
+					}
+					&:hover{
+						&:before{
+							color:$primary-dark;
+						}	
+					}
+				}
+				.owl-next{
+					&:before{
+						color:$text-head;
+					}
+					&:hover{
+						&:before{
+							color:$primary-dark;
+						}
+					}
+				}
+			}
+
+			//owl dots
+			.owl-dots{
+				border-left:2px solid $border-color;
+				border-right:2px solid $border-color;
+				.owl-dot{					
+					background:$border-color;					
+					&.active{
+						background:$primary-light;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/*==========| (17). testimonials section css |==========*/
+.lt_testimonials_section{
+
+	//testimonials carousel
+	.lt_testimonials_carousel_container{
+		.lt_testimonials_carousel_block{
+			.lt_testi_before_icon{
+				i{
+					color:$white;
+				}
+			}
+			.lt_testimonial_text_block{
+				p{
+					color:$white;
+				}
+			}
+			.lt_testimonial_user_info_block{
+				.lt_testi_userdetail_block{
+					h3{						
+						color:$white;
+					}
+					h5{
+						color:$border-light;
+					}
+				}
+			}
+		}
+
+		.owl-controls{
+			
+			//owl nav
+			.owl-nav{
+				.owl-prev{
+					&:before{
+						color:$white;
+					}
+					&:hover{
+						&:before{
+							color:$black;
+						}	
+					}
+				}
+				.owl-next{
+					&:before{
+						color:$white;
+					}
+					&:hover{
+						&:before{
+							color:$black;
+						}
+					}
+				}
+			}
+
+			//owl dots
+			.owl-dots{
+				.owl-dot{
+					background:$white;
+				}
+			}
+		}
+	}
+
+	//overlay
+	.lt_testimonials_overlay{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+	}
+}
+
+
+/*==========| (18). subscribe section css |==========*/
+.lt_subscribe_section{
+	text-align:center;
+	h1{
+		color:$text-dark;
+	}
+	.lt_subscribe_form_block{
+		border:1px solid $border-color;
+	   -webkit-box-shadow: inset 0 0 15px rgba(223,223,223,1);
+			   box-shadow: inset 0 0 15px rgba(223,223,223,1);
+		button{
+			background:transparent;
+			i{
+				background: -webkit-linear-gradient($primary-dark, $primary-lighttext);
+			    background: linear-gradient($primary-dark, $primary-lighttext);
+			    -webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+			}
+		}
+		input{
+			background:transparent;
+		}
+		&.focusbox{
+			border:1px solid $primary-dark;
+		}
+	}
+	::-webkit-input-placeholder { /* Chrome */
+	  color: #c2c2c2;
+	}
+	:-ms-input-placeholder { /* IE 10+ */
+	  color: #c2c2c2;
+	}
+	::-moz-placeholder { /* Firefox 19+ */
+	  color: #c2c2c2;
+	  opacity: 1;
+	}
+	:-moz-placeholder { /* Firefox 4 - 18 */
+	  color: #c2c2c2;
+	  opacity: 1;
+	}
+}
+
+/*==========| (19). contact section css |==========*/
+.lt_contact_section{
+
+	//contact overlay
+	.lt_contact_overlay{
+		background:rgba(249, 249, 249,0.95);
+	}
+
+	.lt_contact_form_block{
+		.lt_tks_message{
+			.lt_tk_msg_inner{
+				h1{
+					color:$primary-dark;
+				}
+			}
+		}
+	}
+
+	.lt_contact_info_block{
+		background:$white;
+		h2{
+			color:$menu-color;
+		}		
+		p{
+			color:$text-head;
+		}
+		.lt_connecting_option_block{
+			.lt_connecting_block_inner{
+				i{
+					background: -webkit-linear-gradient($primary-dark,$primary-lighttext);
+					background:linear-gradient($primary-dark,$primary-lighttext);
+					-webkit-background-clip: text;
+				  			background-clip: text;
+				  	-webkit-text-fill-color: transparent;
+				  			text-fill-color: transparent;
+				}	
+				a, p{
+					color:$text-head;
+				}
+				a{
+					&:hover,
+					&:focus{
+						color:$primary-dark;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+/*==========| (20). map section css |==========*/
+.lt_google_map_section{	
+
+	//map button
+	.lt_map_btn_block{
+		a{
+			color:$primary-dark;
+			background:$white;
+		}
+	}
+}	
+
+
+
+
+/*==========| (21). footer section css |========== */
+.lt_footer_section{
+    
+    //footer overlay
+    .lt_footer_overlay{
+		background: $primary-dark; /* For browsers that do not support gradients */
+	    background: -webkit-linear-gradient($primary-dark, $primary-light); /* For Safari 5.1 to 6.0 */
+	    background: -o-linear-gradient($primary-dark, $primary-light); /* For Opera 11.1 to 12.0 */
+	    background: -moz-linear-gradient($primary-dark, $primary-light); /* For Firefox 3.6 to 15 */
+	    background: linear-gradient($primary-dark, $primary-light); /* Standard syntax */
+	}
+
+    //footer logo block
+    .lt_footer_logo_block{
+    	a{
+			color:$white;
+    	}
+    }
+
+    //footer menu block
+    .lt_footer_menu_block{
+    	.lt_footer_menu{
+    		ul{
+    			li{
+    				a{
+    					color:$white;
+    					&:hover,
+    					&:focus{
+    						color:$primary-hoverdark;
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+
+    //copyright and footer content
+    .lt_copyright_block{
+    	.lt_copy_title{
+			h3{
+				color:$white;
+				&:after{
+					background:$border-color;
+				}
+				&:before{
+					background:$border-color;
+				}
+			}
+		}
+
+		//footer text content
+		.lt_footer_text_block{
+			p{
+				color:$border-color;
+			}
+		}
+
+		//footer social block
+		.footer_social_block{
+			text-align:center;
+			.footer_social{
+				span{
+					color:$white;
+				}
+				ul{
+					li{
+						a{	
+							color:$primary-hoverdark;
+							&:hover,
+							&:focus{
+								color:$white;
+							}		
+						}
+					}
+				}
+			}
+		}
+	}	
+    .scrollToTop{
+		color:$primary-light;
+		background:$bg-light;
+		&:hover, &:focus{
+			color:$white;
+			background:$primary-hoverdark;
+		}		
+	}
+}
+
+
+/*==========| (21.2). footer section css |==========*/
+.lt_footer_sectionv2{
+	background:$primary-light;
+	.lt_ftitle{
+		h3{
+			color:$white;
+			&:after{
+				background:$primary-dark;
+			}
+		}
+	}
+	.lt_inner_footer_upper{
+
+		//footer info block
+		.lt_footer_info_block{
+			h2{
+				color:#fff;
+			}
+			p{
+				color:$white;
+			}
+		}
+
+		//footer social block
+		.footer_social{
+			ul{
+				li{
+					a{	
+						color:$white;
+						&:hover,
+						&:focus{
+							color:$primary-hoverdark;
+						}		
+					}
+				}
+			}
+		}
+	}
+
+	
+    //footer menu block
+    .lt_footer_menu_block{
+    	.lt_footer_menu{
+    		ul{
+    			li{
+    				a{
+    					color:$white;
+    					display:inline-block;
+    					&:after{
+    						background:$white;
+    					}		
+    				}
+    			}
+    		}
+    	}
+    }
+
+    //copyright and footer content
+    .lt_copyright_block{
+    	background:$primary-dark;
+    	.lt_copy_title{
+			h3{
+				color:$bg-light;
+			}
+		}
+
+		//footer text content
+		.lt_footer_text_block{
+			p{
+				color:$border-color;
+			}
+		}	
+    }
+    .scrollToTop{
+		color:$white;
+	}
+}
+
+
+/*==========| responsive footer section css |==========*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.lt_footer_sectionv2{
+		.lt_inner_footer_upper{
+			.lt_footer_info_block{
+			    border-bottom: 1px solid $primary-dark;
+			}
+		}			
+	}	
+}
+
+
+@media (max-width: 767px){
+	.lt_footer_sectionv2{
+		.lt_inner_footer_upper{
+			.lt_footer_info_block{
+			    border-bottom: 1px solid $primary-dark;
+			}
+		}			
+	}		
+}
+
+/*==========| blog page css |==========*/
+.lt_blog_single_page{
+
+	.lt_blog_single_title_info{
+		border-bottom:1px solid $border-light;
+	}
+	.lt_blog_single_nav_block{
+		border-top:1px solid $border-light;
+		&:before{
+			background:$border-light;
+		}
+		.lt_bs_left{
+			color:$text-dark;
+			&:after{
+			    border-top: 3px solid $primary-dark;
+			    border-left: 3px solid $primary-dark;
+			}
+			&:hover{
+				span{
+					&.lt_blog_title_link{
+						color:$primary-hoverdark;
+					}
+				}
+				span{
+					color: $text-head;
+				}
+			}
+		}
+		.lt_bs_right{
+			color:$text-dark;
+			&:after{
+			    border-top: 3px solid $primary-dark;
+			    border-left: 3px solid $primary-dark;
+			}
+			span{
+				&.lt_singlepage_info{
+				    color: $text-head;
+				}    
+			}
+			&:hover{
+				span{
+					&.lt_blog_title_link{
+						color:$primary-hoverdark;
+					}
+				}
+				span{
+					color: $text-head;
+				}
+			}
+		}
+
+	}
+}
+
+
+/*===== Preloader CSS =====*/
+
+#preloader{ 
+  background: $primary-dark;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient($primary-dark, $primary-light);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($primary-dark, $primary-light);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($primary-dark, $primary-light);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient($primary-dark, $primary-light);
+  /* Standard syntax */  
+}
+.sk-folding-cube .sk-cube:before {
+  background-color: $white;
+}
+
+
